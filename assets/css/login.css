@@ -1,0 +1,92 @@
+body {
+    background-color: rgba(255, 68, 0, 0.904);   
+}
+
+body, 
+.container,
+.small-box,
+.container-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 90vh;
+    justify-content: flex-start;
+}
+
+.small-box {
+    width: 300px;
+    height: auto;
+    padding: 60px 10px 60px 10px;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+}
+
+.logo-agv-medium {
+    width: 100px;
+    height: 100px;
+    background-image: url("../brand/brand.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.input-default {
+    width: 80%;
+    height: 30px;
+    border: none;
+    outline: 0;
+    padding: 4px 4px 4px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+.input-default:focus {
+    background-color: #f7f7f7;
+}
+
+.medium-button-default {
+    width: 50%;
+    height: 40px;
+    padding: 8px 2px 8px 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(6, 6, 206);
+    -webkit-transition: 0.3s ease-in-out; // navegadores webkit, como Safari e Chrome
+    -moz-transition: 0.3s ease-in-out; // Firefox
+    -o-transition: 0.3s ease-in-out; // Opera
+}
+
+button:hover {
+    background-color: rgb(6, 6, 116);
+}
+
+.container-text {
+    width: 200px;
+    flex-direction: row;
+}
+
+a,
+p {
+    text-decoration: none;
+    font-size: 1.4em;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+a {
+    color: rgb(20, 99, 218);
+}
+
+.space-text {
+    margin-right: 6px;
+}
