@@ -1,0 +1,33 @@
+body {
+    background-image: url("../../images/tinypng/primary-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 300px;
+    margin-left: -250px;
+    height: 100vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(6, 6, 206);
+    
+}
+
+.navbar:hover {
+    margin-left: 0;
+}
+
+ul {
+
+}
+
+li {
+    font-size: 2em;
+    line-height: 30px;
+    color: #ffffff;
+
+}

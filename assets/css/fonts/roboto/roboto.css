@@ -1,11 +1,11 @@
 @font-face {
     font-family: roboto-black;
-    src: url('../fonts/roboto/roboto-black.ttf');
+    src: url('../../../fonts/roboto/roboto-black.ttf');
 }
 
 @font-face {
     font-family: roboto-light;
-    src: url('../fonts/roboto/roboto-light.ttf');
+    src: url('../../../fonts/roboto/roboto-light.ttf');
 }
 
 h1 {
@@ -13,6 +13,7 @@ h1 {
 }
 
 p,
-a {
+a,
+.input-default {
     font-family: roboto-light;
 }

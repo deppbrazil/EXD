@@ -1,11 +1,13 @@
 body {
-    background-color: rgba(255, 68, 0, 0.904);   
+    background-image: url("../../../images/tinypng/image-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body, 
 .container,
-.small-box,
-.container-text {
+.container__panel,
+.container__panel__text {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,38 +20,45 @@ body,
     justify-content: flex-start;
 }
 
-.small-box {
+.container__panel {
     width: 300px;
     height: auto;
+    box-shadow: 1px 1px 5px rgba(24, 24, 24, 0.329);
     padding: 60px 10px 60px 10px;
     flex-direction: column;
     border-radius: 15px;
     background-color: #f0f0f0;
 }
 
-.logo-agv-medium {
-    width: 100px;
-    height: 100px;
-    background-image: url("../brand/brand.png");
+.container__panel__logo {
+    background-image: url("../../../brands/agv.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.input-default {
+.container__panel__logo--md {
+    width: 100px;
+    height: 100px;
+}
+
+.container__panel__login {
     width: 80%;
-    height: 30px;
+    height: 40px;
     border: none;
+    font-size: 1.6em;
+    color: rgb(128, 128, 128);
     outline: 0;
     padding: 4px 4px 4px 12px;
+    margin-top: 6px;
     margin-bottom: 8px;
     border-radius: 6px;
 }
 
-.input-default:focus {
+.container__panel__login:focus {
     background-color: #f7f7f7;
 }
 
-.medium-button-default {
+.container__panel__btn {
     width: 50%;
     height: 40px;
     padding: 8px 2px 8px 2px;
@@ -61,16 +70,18 @@ body,
     cursor: pointer;
     color: white;
     background-color: rgb(6, 6, 206);
-    -webkit-transition: 0.3s ease-in-out; // navegadores webkit, como Safari e Chrome
-    -moz-transition: 0.3s ease-in-out; // Firefox
-    -o-transition: 0.3s ease-in-out; // Opera
+    -webkit-transition: 0.2s ease-in-out; // navegadores webkit, como Safari e Chrome
+    -moz-transition: 0.2s ease-in-out; // Firefox
+    -o-transition: 0.2s ease-in-out; // Opera
 }
 
-button:hover {
-    background-color: rgb(6, 6, 116);
+.container__panel__btn:hover {
+    background-color: rgb(50, 50, 255);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
 }
 
-.container-text {
+.container__panel__text {
     width: 200px;
     flex-direction: row;
 }
@@ -87,6 +98,6 @@ a {
     color: rgb(20, 99, 218);
 }
 
-.space-text {
-    margin-right: 6px;
+.container__panel__text__space {
+    margin-right: 5px;
 }
