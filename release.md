@@ -1,6 +1,6 @@
 # Release #
 
-### v_0.13.0 ###
+### v_0.3.0 ###
 * Add BEM in css architecture;
 * Add screen Create user;
 * Add screen Dashboard;
