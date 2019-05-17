@@ -6,9 +6,10 @@ body {
 
 .navbarTop,
 .navbarLeft,
-.search,
+.navbarLeft__search,
 .navbarLeft__list,
-.navbarLeft__list__item {
+.navbarLeft__list__container,
+.navbarLeft__list__container__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,22 +31,19 @@ body {
 
 .navbarLeft {
     width: 50px;
-    padding-left: 5px;
-    padding-right: 5px;
     height: 100vh;
     cursor: pointer;
     justify-content: flex-start;
+    -webkit-transition: 0.3s ease-in-out; // navegadores webkit, como Safari e Chrome
+    -moz-transition: 0.3s ease-in-out; // Firefox
+    -o-transition: 0.3s ease-in-out; // Opera   
 }
 
 .navbarLeft:hover {
-    width: 300px;
+    width: 350px;
 }
 
-.navbarLeft:hover .navbarLeft__list__divisor {
-    background-color: rgba(192, 192, 192, 0.322);
-}
-
-.search {
+.navbarLeft__search {
     width: 85%;
     height: 40px;
     margin-top: 100px;
@@ -55,7 +53,7 @@ body {
     background-color: rgb(9, 10, 58);
 }
 
-.search__input {
+.navbarLeft__search__input {
     width: 80%;
     outline: 0;
     border: 0;
@@ -65,7 +63,7 @@ body {
     background-color: transparent;
 }
 
-.search__icon {
+.navbarLeft__search__icon {
     width: 20px;
     margin: 5px;
     margin-left: -13px;
@@ -77,34 +75,36 @@ body {
     height: auto;
 }
 
-.navbarLeft__list__item {
+.navbarLeft__list__container__item {
     width: 100%;
-    font-size: 2em;
-    line-height: 30px;
+    font-size: 1.4em;
+    line-height: 18px;
     color: #ffffff;
     margin-top: 2px;
     margin-bottom: 2px;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.navbarLeft__list__item__icon--left {
+.navbarLeft__list__container__item--row {
+    flex-direction: row;
+}
+
+.navbarLeft__list__container__item__icon--left {
     width: 50px;
     height: 50px;
-    position: absolute;
     background-image: url("../../../icons/icon-wms.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.navbarLeft:hover .navbarLeft__list__item__icon--left {
+.navbarLeft:hover .navbarLeft__list__container__item__icon--left {
     width: 250px;
     height: 50px;
-    position: relative;
     background-image: url("../../../icons/agv-wms.png");
 }
 
-.navbarLeft__list__item__icon--right {
+.navbarLeft__list__container__item__icon--right {
+    display: none;
     width: 250px;
     height: auto;
     margin-right: 20px;
@@ -113,11 +113,20 @@ body {
     background-repeat: no-repeat;
 }
 
-.navbarLeft:hover .navbarLeft__list__item__icon--right {
+.navbarLeft:hover .navbarLeft__list__container__item__icon--right {
+    display: block;
     width: 15px;
     height: 15px;
     margin-right: 15;
     background-image: url("../../../icons/tinypng/arrow-white.png");
+}
+
+.navbarLeft__list__container__item__icon--right:active  {
+    transform: rotate(90deg);
+}
+
+.navbarLeft__list__container__item--desable {
+    display: none;
 }
 
 .navbarLeft__list__divisor {
@@ -125,4 +134,8 @@ body {
     height: 1px;
     border-radius: 10px;
     background-color: transparent;
+}
+
+.navbarLeft:hover .navbarLeft__list__divisor {
+    background-color: rgba(192, 192, 192, 0.322);
 }

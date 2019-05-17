@@ -27,28 +27,65 @@
 </head>
 
 <body>
+
+    <!-- Header -->
     <header class="navbarTop">
         <h2 class="padding">Logo AGV</h2>
         <h2 class="padding">Perfil de usuário</h2>
     </header>
 
+    <!-- Menu left -->
     <div class="navbarLeft">
 
-        <div class="search">
-            <input class="search__input" type="text" placeholder="Buscar..."/>
-            <img class="search__icon" src="../../icons/tinypng/search.png"/>
+        <!-- Search -->
+        <div class="navbarLeft__search">
+            <input class="navbarLeft__search__input" type="text" placeholder="Buscar..."/>
+            <img class="navbarLeft__search__icon" src="../../icons/tinypng/search.png"/>
         </div>
-
+        
+        <!-- List -->
         <ul class="navbarLeft__list">
-            <li class="navbarLeft__list__item">
-                <a class="navbarLeft__list__item" href="#" >
-                    <div class="navbarLeft__list__item__icon--left"></div>
-                    <div class="navbarLeft__list__item__icon--right"></div>
-                </a>
-            </li>
 
+            <!-- AGV WMS -->
+            <div class="navbarLeft__list__container">
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" href="#" >
+                        <div class="navbarLeft__list__container__item__icon--left"></div>
+                        <div class="navbarLeft__list__container__item__icon--right"></div>
+                    </a>
+                </li>
+
+                <!-- Items dropdown -->
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--desable">
+                    <a>teste</a>
+                    <a>teste</a>
+                    <a>teste</a>
+                </li>
+            </div>
+
+            <!-- Divisor --> 
             <div class="navbarLeft__list__divisor"></div>  
 
+            <div class="navbarLeft__list__container">
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" href="#" >
+                        <div class="navbarLeft__list__container__item__icon--left"></div>
+                        <div class="navbarLeft__list__container__item__icon--right"></div>
+                    </a>
+                </li>
+            </div>
+
+            <!-- Divisor --> 
+            <div class="navbarLeft__list__divisor"></div>  
+
+            <div class="navbarLeft__list__container">
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" href="#" >
+                        <div class="navbarLeft__list__container__item__icon--left"></div>
+                        <div class="navbarLeft__list__container__item__icon--right"></div>
+                    </a>
+                </li>
+            </div>
         </ul>        
     </div>
     
