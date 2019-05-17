@@ -14,6 +14,8 @@ h1 {
 
 p,
 a,
-.input-default {
+input,
+ul,
+li {
     font-family: roboto-light;
 }

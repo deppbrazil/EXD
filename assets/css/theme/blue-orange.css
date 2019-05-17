@@ -1,3 +1,21 @@
 body {
     background-color: rgba(255, 68, 0, 0.904);   
 }
+
+/* Login */
+.container__panel__btn {
+    background-color: rgb(24, 26, 107);
+}
+
+.container__panel__btn:hover {
+    background-color: rgb(50, 50, 255);
+}
+
+.container__panel__text--blue {
+    color: rgb(20, 99, 218);
+}
+
+/* Dashboard */
+.navbarLeft {
+    background-color: rgb(24, 26, 107);
+}

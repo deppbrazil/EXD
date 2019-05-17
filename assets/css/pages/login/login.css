@@ -69,14 +69,12 @@ body,
     border: none;
     cursor: pointer;
     color: white;
-    background-color: rgb(6, 6, 206);
     -webkit-transition: 0.2s ease-in-out; // navegadores webkit, como Safari e Chrome
     -moz-transition: 0.2s ease-in-out; // Firefox
     -o-transition: 0.2s ease-in-out; // Opera
 }
 
 .container__panel__btn:hover {
-    background-color: rgb(50, 50, 255);
     box-sizing: border-box;
     box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
 }
@@ -94,10 +92,6 @@ p {
     margin-bottom: 8px;
 }
 
-a {
-    color: rgb(20, 99, 218);
-}
-
-.container__panel__text__space {
+.container__panel__text--space {
     margin-right: 5px;
 }
