@@ -121,14 +121,6 @@ body {
     background-image: url("../../../icons/tinypng/arrow-white.png");
 }
 
-.navbarLeft__list__container__item__icon--right:active  {
-    transform: rotate(90deg);
-}
-
-.navbarLeft__list__container__item--desable {
-    display: none;
-}
-
 .navbarLeft__list__divisor {
     width: 85%;
     height: 1px;

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/base/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../css/fonts/roboto/roboto.css" />
     <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/dropdown.css" />
     <link rel="stylesheet" type="text/css" href="../../css/theme/blue-orange.css" />
 
     <!-- favicon -->
@@ -23,7 +24,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- js -->
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="../../js/pages/dashboard/dropdown.js"></script>
 </head>
 
 <body>
@@ -48,49 +49,103 @@
 
             <!-- AGV WMS -->
             <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" href="#" >
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
                         <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div class="navbarLeft__list__container__item__icon--right"></div>
+                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
                     </a>
                 </li>
 
                 <!-- Items dropdown -->
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--desable">
-                    <a>teste</a>
-                    <a>teste</a>
-                    <a>teste</a>
-                </li>
+                <div id="drop-content" style="display:none;" class="navbarLeft__list__container__item">
+                    <a href="#">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                    <a href="#">Item 4</a>
+                    <a href="#">Item 5</a>
+                </div>
             </div>
 
             <!-- Divisor --> 
-            <div class="navbarLeft__list__divisor"></div>  
+            <div class="navbarLeft__list__divisor"></div>
 
+            <!-- AGV WMS -->
             <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" href="#" >
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
                         <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div class="navbarLeft__list__container__item__icon--right"></div>
+                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
                     </a>
                 </li>
             </div>
 
             <!-- Divisor --> 
-            <div class="navbarLeft__list__divisor"></div>  
+            <div class="navbarLeft__list__divisor"></div>
 
+            <!-- AGV WMS -->
             <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" href="#" >
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
                         <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div class="navbarLeft__list__container__item__icon--right"></div>
+                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
                     </a>
                 </li>
             </div>
-        </ul>        
+
+            <!-- Divisor --> 
+            <div class="navbarLeft__list__divisor"></div>
+
+            <!-- AGV WMS -->
+            <div class="navbarLeft__list__container">
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
+                        <div class="navbarLeft__list__container__item__icon--left"></div>
+                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+                    </a>
+                </li>
+            </div>
+
+            <!-- Divisor --> 
+            <div class="navbarLeft__list__divisor"></div>
+
+            <!-- AGV WMS -->
+            <div class="navbarLeft__list__container">
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
+                        <div class="navbarLeft__list__container__item__icon--left"></div>
+                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+                    </a>
+                </li>
+            </div>
+
+            <!-- Divisor --> 
+            <div class="navbarLeft__list__divisor"></div>
+
+            <!-- AGV WMS -->
+            <div class="navbarLeft__list__container">
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
+                        <div class="navbarLeft__list__container__item__icon--left"></div>
+                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+                    </a>
+                </li>
+            </div>
+
+            <!-- Divisor --> 
+            <div class="navbarLeft__list__divisor"></div>
+
+            <!-- AGV WMS -->
+            <div class="navbarLeft__list__container">
+                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
+                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
+                        <div class="navbarLeft__list__container__item__icon--left"></div>
+                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+                    </a>
+                </li>
+            </div>
+
+            <!-- Divisor --> 
+            <div class="navbarLeft__list__divisor"></div>            
     </div>
-    
-    <section class="container">
-	    
-    </section>
 </body>
 </html>

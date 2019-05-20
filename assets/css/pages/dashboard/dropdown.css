@@ -1,0 +1,16 @@
+#drop-content {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.5em;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: rgb(9, 10, 58);
+}
+
+#drop-content a {
+    color: #ffffff;
+}
