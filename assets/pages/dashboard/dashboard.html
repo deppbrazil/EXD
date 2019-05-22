@@ -7,14 +7,15 @@
     <title>Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- css -->
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../../css/base/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../css/fonts/roboto/roboto.css" />
     <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/dashboard.css" />
     <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/dropdown.css" />
     <link rel="stylesheet" type="text/css" href="../../css/theme/blue-orange.css" />
 
-    <!-- favicon -->
+
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
@@ -23,16 +24,16 @@
     <meta name="msapplication-TileColor" content="#f3f3f3">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- js -->
-    <script type="text/javascript" src="../../js/pages/dashboard/dropdown.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="../../js/pages/dashboard/dashboard.js"></script>
 </head>
 
 <body>
 
     <!-- Header -->
     <header class="navbarTop">
-        <h2 class="padding">Logo AGV</h2>
-        <h2 class="padding">Perfil de usuário</h2>
+        <h2 class="navbarTop__padding">Logo AGV</h2>
+        <h2 class="navbarTop__padding">Perfil de usuário</h2>
     </header>
 
     <!-- Menu left -->
@@ -46,106 +47,284 @@
         
         <!-- List -->
         <ul class="navbarLeft__list">
-
+            
             <!-- AGV WMS -->
-            <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
-                        <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+            <div class="navbarLeft__list__container" >
+                <li class="navbarLeft__list__container__item" onclick="showWMS()">
+                    <a class="navbarLeft__list__container__item" >
+                        <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--WMS"></div>
+                        <div id="arrow--WMS" class="navbarLeft__list__container__item__icon__right navbarLeft__list__container__item__icon__right--WMS"></div>
                     </a>
                 </li>
 
-                <!-- Items dropdown -->
-                <div id="drop-content" style="display:none;" class="navbarLeft__list__container__item">
-                    <a href="#">Item 1</a>
-                    <a href="#">Item 2</a>
-                    <a href="#">Item 3</a>
-                    <a href="#">Item 4</a>
-                    <a href="#">Item 5</a>
-                </div>
+                <!-- Dropdown -->
+                    <ul style="display: none;" id="drop__content--WMS" class="navbarLeft__list__container__dropdown">
+                        
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 2</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 3</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 4</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 5</a>
+                        </li>
+
+                    </ul>
             </div>
 
             <!-- Divisor --> 
             <div class="navbarLeft__list__divisor"></div>
 
-            <!-- AGV WMS -->
-            <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
-                        <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+            <!-- AGV TMS -->
+            <div class="navbarLeft__list__container" >
+                <li class="navbarLeft__list__container__item" onclick="showTMS()">
+                    <a class="navbarLeft__list__container__item" >
+                        <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--TMS"></div>
+                        <div id="arrow--TMS" class="navbarLeft__list__container__item__icon__right navbarLeft__list__container__item__icon__right--TMS"></div>
                     </a>
                 </li>
+
+                <!-- Dropdown -->
+                    <ul style="display: none;" id="drop__content--TMS" class="navbarLeft__list__container__dropdown">
+                        
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 2</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 3</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 4</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 5</a>
+                        </li>
+
+                    </ul>
             </div>
 
             <!-- Divisor --> 
             <div class="navbarLeft__list__divisor"></div>
 
-            <!-- AGV WMS -->
-            <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
-                        <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+            <!-- AGV Broker -->
+            <div class="navbarLeft__list__container" >
+                <li class="navbarLeft__list__container__item" onclick="showBroker()">
+                    <a class="navbarLeft__list__container__item" >
+                        <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--broker"></div>
+                        <div id="arrow--broker" class="navbarLeft__list__container__item__icon__right navbarLeft__list__container__item__icon__right--broker"></div>
                     </a>
                 </li>
+
+                <!-- Dropdown -->
+                    <ul style="display: none;" id="drop__content--broker" class="navbarLeft__list__container__dropdown">
+                        
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 2</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 3</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 4</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 5</a>
+                        </li>
+
+                    </ul>
             </div>
 
             <!-- Divisor --> 
             <div class="navbarLeft__list__divisor"></div>
 
-            <!-- AGV WMS -->
-            <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
-                        <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+            <!-- AGV Customer -->
+            <div class="navbarLeft__list__container" >
+                <li class="navbarLeft__list__container__item" onclick="showCustomer()">
+                    <a class="navbarLeft__list__container__item" >
+                        <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--customer"></div>
+                        <div id="arrow--customer" class="navbarLeft__list__container__item__icon__right navbarLeft__list__container__item__icon__right--customer"></div>
                     </a>
                 </li>
+
+                <!-- Dropdown -->
+                    <ul style="display: none;" id="drop__content--customer" class="navbarLeft__list__container__dropdown">
+                        
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 2</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 3</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 4</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 5</a>
+                        </li>
+
+                    </ul>
             </div>
 
             <!-- Divisor --> 
             <div class="navbarLeft__list__divisor"></div>
 
-            <!-- AGV WMS -->
-            <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
-                        <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+            <!-- AGV ERP -->
+            <div class="navbarLeft__list__container" >
+                <li class="navbarLeft__list__container__item" onclick="showERP()">
+                    <a class="navbarLeft__list__container__item" >
+                        <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--erp"></div>
+                        <div id="arrow--erp" class="navbarLeft__list__container__item__icon__right navbarLeft__list__container__item__icon__right--erp"></div>
                     </a>
                 </li>
+
+                <!-- Dropdown -->
+                    <ul style="display: none;" id="drop__content--erp" class="navbarLeft__list__container__dropdown">
+                        
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 2</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 3</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 4</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 5</a>
+                        </li>
+
+                    </ul>
             </div>
 
             <!-- Divisor --> 
             <div class="navbarLeft__list__divisor"></div>
 
-            <!-- AGV WMS -->
-            <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
-                        <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+            <!-- AGV Supply -->
+            <div class="navbarLeft__list__container" >
+                <li class="navbarLeft__list__container__item" onclick="showSupply()">
+                    <a class="navbarLeft__list__container__item" >
+                        <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--supply"></div>
+                        <div id="arrow--supply" class="navbarLeft__list__container__item__icon__right navbarLeft__list__container__item__icon__right--supply"></div>
                     </a>
                 </li>
+
+                <!-- Dropdown -->
+                    <ul style="display: none;" id="drop__content--supply" class="navbarLeft__list__container__dropdown">
+                        
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 2</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 3</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 4</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 5</a>
+                        </li>
+
+                    </ul>
             </div>
 
             <!-- Divisor --> 
             <div class="navbarLeft__list__divisor"></div>
 
-            <!-- AGV WMS -->
-            <div class="navbarLeft__list__container">
-                <li class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="show()">
-                    <a class="navbarLeft__list__container__item navbarLeft__list__container__item--row" onclick="extendList()"  >
-                        <div class="navbarLeft__list__container__item__icon--left"></div>
-                        <div id="arrowWms" class="navbarLeft__list__container__item__icon--right"></div>
+            <!-- AGV Solutions -->
+            <div class="navbarLeft__list__container" >
+                <li class="navbarLeft__list__container__item" onclick="showSolutions()">
+                    <a class="navbarLeft__list__container__item" >
+                        <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--solutions"></div>
+                        <div id="arrow--solutions" class="navbarLeft__list__container__item__icon__right navbarLeft__list__container__item__icon__right--solutions"></div>
                     </a>
                 </li>
+
+                <!-- Dropdown -->
+                    <ul style="display: none;" id="drop__content--solutions" class="navbarLeft__list__container__dropdown">
+                        
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 1</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 2</a>
+                        </li>
+
+                        <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 3</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 4</a>
+                        </li>
+
+                         <li class="navbarLeft__list__container__dropdown__item" >
+                            <a href="#">Item 5</a>
+                        </li>
+
+                    </ul>
             </div>
 
-            <!-- Divisor --> 
-            <div class="navbarLeft__list__divisor"></div>            
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
     </div>
+
+
 </body>
 </html>

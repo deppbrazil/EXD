@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Flexbox */
 .navbarTop,
 .navbarLeft,
 .navbarLeft__search,
@@ -16,22 +17,29 @@ body {
     justify-content: center;
 }
 
+/* NavbarTop */
 .navbarTop {
     width: 100%;
     height: 80px;
     position: fixed;
+    z-index: 1;
     flex-direction: row;
     justify-content: space-between;
     background-color: #ffffff;
 }
 
-.padding {
+/* Margin NavbarTop */
+.navbarTop__padding {
     margin: 20px;
 }
 
+/* NavbarLeft */
 .navbarLeft {
     width: 50px;
     height: 100vh;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
     cursor: pointer;
     justify-content: flex-start;
     -webkit-transition: 0.3s ease-in-out; // navegadores webkit, como Safari e Chrome
@@ -39,12 +47,14 @@ body {
     -o-transition: 0.3s ease-in-out; // Opera   
 }
 
+/* Hover - NavbarLeft */
 .navbarLeft:hover {
-    width: 350px;
+    width: 300px;
 }
 
+/* Searching */
 .navbarLeft__search {
-    width: 85%;
+    width: 80%;
     height: 40px;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -53,74 +63,47 @@ body {
     background-color: rgb(9, 10, 58);
 }
 
+/* Searching input */
 .navbarLeft__search__input {
-    width: 80%;
+    width: 100%;
     outline: 0;
     border: 0;
     margin: 15px;
     font-size: 1.4em;
-    color: #ffffff;
+    color: rgb(128, 128, 128);
     background-color: transparent;
 }
 
+/* Icon Searching */
 .navbarLeft__search__icon {
     width: 20px;
+    padding: 5px;
     margin: 5px;
-    margin-left: -13px;
+    margin-left: -15px;
     margin-right: 15px;
 }
  
+/* List NavbarLeft */
 .navbarLeft__list {
     width: 100%;
     height: auto;
 }
 
+/* Item List NavbarLeft */
 .navbarLeft__list__container__item {
     width: 100%;
+    height: auto;
     font-size: 1.4em;
     line-height: 18px;
     color: #ffffff;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    justify-content: space-around;
-}
-
-.navbarLeft__list__container__item--row {
     flex-direction: row;
+    justify-content: space-between;
+}
+.navbarLeft__list__container__item:hover {
+    background-color: rgb(28, 30, 171);
 }
 
-.navbarLeft__list__container__item__icon--left {
-    width: 50px;
-    height: 50px;
-    background-image: url("../../../icons/icon-wms.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.navbarLeft:hover .navbarLeft__list__container__item__icon--left {
-    width: 250px;
-    height: 50px;
-    background-image: url("../../../icons/agv-wms.png");
-}
-
-.navbarLeft__list__container__item__icon--right {
-    display: none;
-    width: 250px;
-    height: auto;
-    margin-right: 20px;
-    background-image: url("../../../icons/tinypng/arrow-white.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.navbarLeft:hover .navbarLeft__list__container__item__icon--right {
-    display: block;
-    width: 15px;
-    height: 15px;
-    margin-right: 15;
-    background-image: url("../../../icons/tinypng/arrow-white.png");
-}
-
+/* Divisor */
 .navbarLeft__list__divisor {
     width: 85%;
     height: 1px;
@@ -130,4 +113,98 @@ body {
 
 .navbarLeft:hover .navbarLeft__list__divisor {
     background-color: rgba(192, 192, 192, 0.322);
+}
+
+
+/* ================ MENU ITEMS ================*/
+
+/* Both */
+.navbarLeft__list__container__item__icon__left {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left {
+    width: 290px;
+    height: 50px;
+    margin-left: 5px;
+}
+/* Arrow */
+.navbarLeft__list__container__item__icon__right {
+    transform: 0deg;
+    display: none;
+    background-image: url("../../../icons/tinypng/arrow-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__right {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+/* ================ WMS ================*/
+
+/* Item List NavbarLeft - Icon WMS */
+.navbarLeft__list__container__item__icon__left--WMS {
+    background-image: url("../../../icons/icon-wms.png");
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left--WMS {
+    background-image: url("../../../icons/agv-wms.png");
+}
+
+/* ================ TMS ================*/
+/* Item List NavbarLeft - Icon TMS */
+.navbarLeft__list__container__item__icon__left--TMS {
+    background-image: url("../../../icons/icon-tms.png");
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left--TMS {
+    background-image: url("../../../icons/agv-tms.png");
+}
+
+/* ================ Broker ================*/
+/* Item List NavbarLeft - Icon Broker */
+.navbarLeft__list__container__item__icon__left--broker {
+    background-image: url("../../../icons/icon-broker.png");
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left--broker {
+    background-image: url("../../../icons/agv-broker.png");
+}
+
+/* ================ Customer ================*/
+/* Item List NavbarLeft - Icon Customer */
+.navbarLeft__list__container__item__icon__left--customer {
+    background-image: url("../../../icons/icon-customer.png");
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left--customer {
+    background-image: url("../../../icons/agv-customer.png");
+}
+
+/* ================ ERP ================*/
+/* Item List NavbarLeft - Icon ERP */
+.navbarLeft__list__container__item__icon__left--erp {
+    background-image: url("../../../icons/icon-erp.png");
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left--erp {
+    background-image: url("../../../icons/agv-erp.png");
+}
+
+/* ================ Supply ================*/
+/* Item List NavbarLeft - Icon Supply */
+.navbarLeft__list__container__item__icon__left--supply {
+    background-image: url("../../../icons/icon-supply.png");
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left--supply {
+    background-image: url("../../../icons/agv-suply.png");
+}
+
+/* ================ Solutions ================*/
+/* Item List NavbarLeft - Icon Solutions */
+.navbarLeft__list__container__item__icon__left--solutions {
+    background-image: url("../../../icons/icon-solutions.png");
+}
+.navbarLeft:hover .navbarLeft__list__container__item__icon__left--solutions {
+    background-image: url("../../../icons/agv-solutions.png");
 }

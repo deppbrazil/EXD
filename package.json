@@ -1,0 +1,10 @@
+{
+  "name": "EXD",
+  "version": "0.4.0",
+  "description": "New System",
+  "main": "index.html",
+  "repository": "git@github.com:deppbrazil/EXD.git",
+  "author": "Mir Carvalho <deppbrazil@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
