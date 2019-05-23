@@ -123,3 +123,8 @@ function showSolutions() {
         arrowWMS.style.transform = "rotate(90deg)";
     }
 }
+
+function showScreenSearch() {
+    var click = document.getElementById('content');
+    click.style.left = "0";
+}

@@ -11,7 +11,9 @@
     <link rel="stylesheet" type="text/css" href="../../css/base/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../css/fonts/roboto/roboto.css" />
     <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/dashboard.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/navbarLeft.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/navbarTop.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/pages/dashboard/content.css" />
     <link rel="stylesheet" type="text/css" href="../../css/theme/blue-orange.css" />
 
 
@@ -254,7 +256,7 @@
                             <a href="#">Item 1</a>
                         </li>
 
-                        <li class="navbarLeft__list__container__dropdown__item" >
+                        <li class="navbarLeft__list__container__dropdown__item" onclick="showScreenSearch()">
                             <a href="#">Item 2</a>
                         </li>
 
@@ -310,21 +312,14 @@
 
                     </ul>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
         </ul>
     </div>
 
+    <section id="content" class="content">
+        <iframe class="content__screen" src="./agv-supply/agv-suply.html">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+    </section>
 
 </body>
 </html>

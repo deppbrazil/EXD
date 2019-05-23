@@ -1,7 +1,23 @@
 body {
-    background-color: rgba(255, 68, 0, 0.904);   
+    background-color: #ffffff;
 }
 
+/* === Texts === */
+/* Color Primary */
+.color__text__primary {
+    color: #010224;
+}
+/* Color Second */
+.color__text__second {
+    color: #ffffff;
+}
+/* Color Third */
+.color__text__third {
+    color: #aeaeae;
+}
+
+
+/* === Login === */
 /* Login */
 .container__panel__btn {
     background-color: rgb(24, 26, 107);
@@ -15,6 +31,7 @@ body {
     color: rgb(20, 99, 218);
 }
 
+/* === Dashboard === */
 /* Dashboard */
 .navbarLeft {
     background-color: rgb(24, 26, 107);

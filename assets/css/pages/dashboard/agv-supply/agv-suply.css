@@ -1,0 +1,194 @@
+/* Both */
+.container, 
+.container__header,
+.container__header__item,
+.container__center,
+.container__center__box,
+.container__footer,
+.container__footer__box,
+.container__footer__box__item,
+.container__footer__box__item__text,
+.container__footer__box__item--notBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container Header */
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+/* Header */
+.container__header {
+    width: 90%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    border-radius: 60px;
+    border: 2px solid rgb(24, 26, 107);
+}
+
+.container__header__item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.container__header__item:hover {
+    background-color: rgb(24, 26, 107);
+}
+
+.container__header__item--borderLeft {
+    border-radius: 60px 0px 0px 60px;
+}
+
+.container__header__item--borderCenter {
+    border-left: 2px solid rgb(24, 26, 107);
+    border-right: 2px solid  rgb(24, 26, 107);
+}
+
+.container__header__item--borderRight {
+    border-radius: 0px 60px 60px 0px;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 23px;
+}
+
+h3 {
+    font-size: 1.4em;
+    line-height: 18px;
+}
+.container__footer__box__item:hover h3 {
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 16px;
+}
+
+.container__header__item:hover h2 {
+    color: #ffffff;
+}
+
+/* Container  */
+.container__center {
+    width: 90%;
+    height: 50vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Input */
+.container__center__box {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.container__center__box__input {
+    width: 60%;
+    height: 20px;
+    margin-right: 3%;
+    border-radius: 10px;
+    border: 2px solid rgb(205, 205, 205);
+    padding: 10px;
+    outline: 0;
+    font-size: 1.4em;
+    color: rgb(114, 114, 114);
+    background-color: #ffffff;
+}
+.container__center__box__button {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: 0;
+    background-color: rgb(24, 26, 107);
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out; // navegadores webkit, como Safari e Chrome
+    -moz-transition: 0.2s ease-in-out; // Firefox
+    -o-transition: 0.2s ease-in-out; // Opera
+}
+.container__center__box__button:hover {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
+}
+
+/* Footer */
+.container__footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(211, 211, 211);
+}
+
+.container__footer__box {
+    width: 90%;
+    height: 90%;
+    flex-direction: row;
+}
+
+.container__footer__box__item {
+    width: 100%;
+    height: 80%;
+    margin: 2px;
+    border-radius: 5px;
+    flex-direction: row;
+    cursor: pointer;
+    border: 1px solid rgb(114, 114, 114);
+}
+
+.container__footer__box__item:hover {
+    background-color:rgb(114, 114, 114);
+}
+
+.container__footer__box__item--notBorder {
+    width: 100px;
+    margin-right: 15px;
+    border: 0;
+    cursor: default;
+}
+
+.container__footer__box__item--notBorder:hover {
+    background-color: transparent;
+}
+
+.container__footer__box__item__text {
+    align-items: flex-start;
+}
+
+/* Both - Icons */
+.container__footer__box__item__icon {
+    width: 45%;
+    height: 70px;
+    margin: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Icons */
+.container__footer__box__item__icon--PR {
+    background-image: url("../../../../icons/tinypng/pedido-recebido.png");
+}
+.container__footer__box__item__icon--PP {
+    background-image: url("../../../../icons/tinypng/preparacao-pedido.png");
+}
+.container__footer__box__item__icon--ET {
+    background-image: url("../../../../icons/tinypng/em-transito.png");
+}
+.container__footer__box__item__icon--PRZ {
+    background-image: url("../../../../icons/tinypng/pedido-realizado.png");
+}
