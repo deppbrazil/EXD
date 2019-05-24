@@ -8,7 +8,7 @@
     margin-left: 20%;
     margin-right: 10%;
     border-radius: 10px;
-    left: 100%;
+    /*left: 100%;*/
     background-color: #cb0c0c;
     -webkit-transition: 0.1s ease-in-out; // navegadores webkit, como Safari e Chrome
     -moz-transition: 0.1s ease-in-out; // Firefox

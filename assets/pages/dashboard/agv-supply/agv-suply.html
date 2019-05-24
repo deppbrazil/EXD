@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AGV Supply</title>
+    <title>EXD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- CSS -->
@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../../../css/theme/blue-orange.css" />
 
     <!-- JS -->
-    <!--<script type="text/javascript" src=""></script>-->
+    <script type="text/javascript" src="../../../js/pages/dashboard/agv-supply/agv-supply.js"></script>
 </head>
 
 <body>
@@ -23,66 +23,98 @@
 
         <!-- Header -->
         <div class="container__header">
-            <div class="container__header__item container__header__item--borderLeft">
-                <h2 class="color__text__primary">Busca Rápida</h2>
+            <div class="container__header__item container__header__item--borderLeft" onclick="showBuscaRapida()">
+                <h2 class="h2-text-size color__text__primary">Busca Rápida</h2>
             </div>
 
             <div class="container__header__item container__header__item--borderCenter">
-                <h2 class="color__text__primary">Busca Avançada</h2>
+                <h2 class="h2-text-size color__text__primary">Busca Avançada</h2>
             </div>
 
             <div class="container__header__item container__header__item--borderRight">
-                <h2 class="color__text__primary">Dashboard</h2>
+                <h2 class="h2-text-size color__text__primary">Dashboard</h2>
             </div>
         </div>
 
-        <!-- Input -->
-        <div class="container__center">
-            <h3>Busca Rápida</h3>
-            <p>Encontre e visualize seus pedidos rapidamente. Caso não tenha os dados abaixo ou queira informações mais detalhadas, preencha abaixo a busca avançada.</p>
+        <!-- Container - Center - Busca rápida  -->
+        <div id="busca__rapida" class="container__center" style="display:none;">
+            <h3 class="h3-text-size text-margin-bottom">Busca Rápida</h3>
+            <p class="p-text-size text-margin-bottom">Encontre e visualize seus pedidos rapidamente. Caso não tenha os dados abaixo ou queira informações mais detalhadas, preencha abaixo a busca avançada.</p>
             <div class="container__center__box">
-                <input class="container__center__box__input" type="text" placeholder="Númedo do pedido ou NF-e" required >
-                <button class="container__center__box__button">Pesquisar</button>
+                <input class="input-text-size container__center__box__input" type="text" placeholder="Númedo do pedido ou NF-e" required >
+                <button class="button-text-size container__center__box__button">Pesquisar</button>
             </div>
         </div>
+
+        <!-- Container - Center - Busca Avançada  -->
+       <div class="container__center__grid">
+            <p class="p-text-size">Busca Avançada</p>
+            <div class="container__center__grid__item">
+                <form>
+                    <input type="text">
+                    <input type="number">
+                    <input type="date">
+                    <input type="number">
+                </form>
+
+                <form>
+                    <input type="text">
+                    <input type="number">
+                    <input type="date">
+                    <input type="number">
+                </form>
+
+                <form>
+                    <input type="text">
+                    <input type="number">
+                    <input type="date">
+                </form>
+            </div>
+
+            <!-- Button - Pesquisar -->
+            <div>
+                <button class="button-text-small color__text__second button button__small"type="button">Pesquisar</button>
+            </div> 
+       </div>
+            
 
         <!-- Footer -->
         <div class="container__footer">
             <div class="container__footer__box">
 
                 <div class="container__footer__box__item container__footer__box__item--notBorder">
-                    <h2 class="color__text__primary">Análise Gerencial KPI</h2>
+                    <h3 class="h3-text-size color__text__primary">Análise Gerencial KPI</h3>
                 </div>
 
                 <div class="container__footer__box__item">
                     <div class="container__footer__box__item__icon container__footer__box__item__icon--PR"></div>
                     <div class="container__footer__box__item__text">
-                        <h3 class="color__text__primary">Pedido</h3>
-                        <h3 class="color__text__primary">Recebido</h3>
+                        <h4 class="h4-text-size color__text__primary">Pedido</h4>
+                        <h4 class="h4-text-size color__text__primary">Recebido</h4>
                     </div>
                 </div>
 
                 <div class="container__footer__box__item">
                     <div class="container__footer__box__item__icon container__footer__box__item__icon--PP"></div>
                     <div class="container__footer__box__item__text">
-                        <h3 class="color__text__primary">Preparação</h3>
-                        <h3 class="color__text__primary">do Pedido</h3>
+                        <h4 class="h4-text-size color__text__primary">Preparação</h4>
+                        <h4 class="h4-text-size color__text__primary">do Pedido</h4>
                     </div>
                 </div>
 
                 <div class="container__footer__box__item">
                     <div class="container__footer__box__item__icon container__footer__box__item__icon--ET"></div>
                     <div class="container__footer__box__item__text">
-                        <h3 class="color__text__primary">Em</h3>
-                        <h3 class="color__text__primary">trânsito</h3>
+                        <h4 class="h4-text-size color__text__primary">Em</h4>
+                        <h4 class="h4-text-size color__text__primary">trânsito</h4>
                     </div>
                 </div>
 
                 <div class="container__footer__box__item">
                     <div class="container__footer__box__item__icon container__footer__box__item__icon--PRZ"></div>
                     <div class="container__footer__box__item__text">
-                        <h3 class="color__text__primary">Pedido</h3>
-                        <h3 class="color__text__primary">Realizado</h3>
+                        <h4 class="h4-text-size color__text__primary">Pedido</h4>
+                        <h4 class="h4-text-size color__text__primary">Realizado</h4>
                     </div>
                 </div>
             </div>

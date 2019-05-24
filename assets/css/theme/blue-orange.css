@@ -2,34 +2,31 @@ body {
     background-color: #ffffff;
 }
 
-/* === Texts === */
-/* Color Primary */
+/* === Color Texts === */
 .color__text__primary {
     color: #010224;
 }
-/* Color Second */
 .color__text__second {
     color: #ffffff;
 }
-/* Color Third */
 .color__text__third {
     color: #aeaeae;
 }
-
-
-/* === Login === */
-/* Login */
-.container__panel__btn {
-    background-color: rgb(24, 26, 107);
+.color_text_fourth {
+	color: rgb(20, 99, 218);
 }
 
-.container__panel__btn:hover {
+/* === Buttons === */
+/* Default */ 
+.button {
+    background-color: rgb(24, 26, 107);
+}
+.button:hover {
     background-color: rgb(50, 50, 255);
 }
 
-.container__panel__text--blue {
-    color: rgb(20, 99, 218);
-}
+/* === Login === */
+/* Login */
 
 /* === Dashboard === */
 /* Dashboard */

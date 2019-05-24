@@ -1,3 +1,11 @@
+/* h2, h4 hover */
+.container__footer__box__item:hover h4 {
+    color: #ffffff;
+}
+.container__header__item:hover h2 {
+    color: #ffffff;
+}
+
 /* Both */
 .container, 
 .container__header,
@@ -33,60 +41,45 @@
     border: 2px solid rgb(24, 26, 107);
 }
 
+/* Header - Items */
 .container__header__item {
     width: 100%;
     height: 100%;
     cursor: pointer;
 }
 
+/* Header - Items:Hover */
 .container__header__item:hover {
     background-color: rgb(24, 26, 107);
 }
 
+/* Header - Items - Item Left */
 .container__header__item--borderLeft {
     border-radius: 60px 0px 0px 60px;
 }
 
+/* Header - Items - Item Center */
 .container__header__item--borderCenter {
     border-left: 2px solid rgb(24, 26, 107);
     border-right: 2px solid  rgb(24, 26, 107);
 }
 
+/* Header - Items - Item Right */
 .container__header__item--borderRight {
     border-radius: 0px 60px 60px 0px;
 }
 
-h2 {
-    font-size: 1.8em;
-    line-height: 23px;
-}
-
-h3 {
-    font-size: 1.4em;
-    line-height: 18px;
-}
-.container__footer__box__item:hover h3 {
-    color: #ffffff;
-}
-
-p {
-    font-size: 1.2em;
-    line-height: 16px;
-}
-
-.container__header__item:hover h2 {
-    color: #ffffff;
-}
-
-/* Container  */
+/* Container - Center - Busca Rápida */
 .container__center {
     width: 90%;
     height: 50vh;
     align-items: flex-start;
     justify-content: flex-start;
+    -webkit-transition: 0.2s ease-in-out; // navegadores webkit, como Safari e Chrome
+    -moz-transition: 0.2s ease-in-out; // Firefox
+    -o-transition: 0.2s ease-in-out; // Opera
 }
-
-/* Input */
+/* Box */
 .container__center__box {
     width: 100%;
     height: auto;
@@ -95,6 +88,7 @@ p {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+/* Input */
 .container__center__box__input {
     width: 60%;
     height: 20px;
@@ -107,6 +101,7 @@ p {
     color: rgb(114, 114, 114);
     background-color: #ffffff;
 }
+/* Button */
 .container__center__box__button {
     width: 100px;
     height: auto;
@@ -126,21 +121,47 @@ p {
     box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
 }
 
+/* Container - Center - Busca Avançada */
+.container__center__grid {
+    display: none;
+    width: 90%;
+    height: 50%;
+    background-color: rgba(97, 8, 8, 0.475);
+}
+.container__center__grid__item {
+    width: 100%;
+    height: 100px;
+    
+}
+form {
+    
+}
+input {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #000000;
+}
+
+
 /* Footer */
 .container__footer {
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: absolute;
     bottom: 0;
     background-color: rgb(211, 211, 211);
 }
 
+/* Box */
 .container__footer__box {
     width: 90%;
     height: 90%;
     flex-direction: row;
 }
 
+/* Item */
 .container__footer__box__item {
     width: 100%;
     height: 80%;
@@ -150,30 +171,30 @@ p {
     cursor: pointer;
     border: 1px solid rgb(114, 114, 114);
 }
-
 .container__footer__box__item:hover {
     background-color:rgb(114, 114, 114);
 }
 
+/* Item not border */
 .container__footer__box__item--notBorder {
-    width: 100px;
+    width: 90px;
     margin-right: 15px;
     border: 0;
     cursor: default;
 }
-
 .container__footer__box__item--notBorder:hover {
     background-color: transparent;
 }
 
+/* Container text */
 .container__footer__box__item__text {
     align-items: flex-start;
 }
 
 /* Both - Icons */
 .container__footer__box__item__icon {
-    width: 45%;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     margin: 2%;
     background-size: contain;
     background-repeat: no-repeat;

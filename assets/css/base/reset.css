@@ -3,6 +3,7 @@
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
+	text-decoration: none;
 }
 
 body {
@@ -11,4 +12,75 @@ body {
 	overflow: hidden;
 	font-size: 10px;
 	line-height: 10px;
+}
+
+/* === Size Texts === */
+.h1-text-size {
+	font-size: 2.8em;
+	line-height: 30px;
+}
+.h2-text-size {
+	font-size: 1.8em;
+	line-height: 20px;
+}
+.h3-text-size {
+	font-size: 1.6em;
+	line-height: 18px;
+}
+.h4-text-size {
+	font-size: 1.2em;
+	line-height: 14px;
+}
+.input-text-size,
+.a-text-size,
+.p-text-size {
+	font-size: 1.4em;
+    line-height: 16px;
+}
+.button-text-medium {
+	font-size: 1.4em;
+    line-height: 16px;
+}
+.button-text-small {
+	font-size: 0.9em;
+    line-height: 0.9px;
+}
+
+/* === Poperties Texts === */
+.text-margin-bottom {
+    margin-bottom: 8px;
+}
+.text-margin-right {
+	margin-right: 5px;
+}
+
+/* === Buttons === */
+/* Default */
+.button {
+	padding: 8px 2px 8px 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out; // navegadores webkit, como Safari e Chrome
+    -moz-transition: 0.2s ease-in-out; // Firefox
+    -o-transition: 0.2s ease-in-out; // Opera
+}
+.button:hover {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
+}
+
+/* Small */
+.button__small {
+	width: 100px;
+    height: 25px;
+}
+
+/* Medium */
+.button__medium {
+    width: 180px;
+    height: 45px;
 }
