@@ -83,8 +83,8 @@
 
 /* Arrow */
 .navbarLeft__list__container__item__icon__right {
-    transform: 0deg;
     display: none;
+    transform: 0deg;
     background-image: url("../../../icons/tinypng/arrow-white.png");
     background-size: contain;
     background-repeat: no-repeat;

@@ -11,7 +11,15 @@
     <link rel="stylesheet" type="text/css" href="../../../css/base/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/fonts/roboto/roboto.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/agv-suply.css" />
-    <link rel="stylesheet" type="text/css" href="../../../css/theme/blue-orange.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/header.css" />
+    
+
+    <!-- agv-styled -->
+    <link rel="stylesheet" type="text/css" href="../../../css/agv-styled/text.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/agv-styled/button.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/agv-styled/input.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/agv-styled/theme/blue-orange.css" />
 
     <!-- JS -->
     <script type="text/javascript" src="../../../js/pages/dashboard/agv-supply/agv-supply.js"></script>
@@ -27,7 +35,7 @@
                 <h2 class="h2-text-size color__text__primary">Busca Rápida</h2>
             </div>
 
-            <div class="container__header__item container__header__item--borderCenter">
+            <div class="container__header__item container__header__item--borderCenter" onclick="showBuscaAvancada()">
                 <h2 class="h2-text-size color__text__primary">Busca Avançada</h2>
             </div>
 
@@ -38,42 +46,75 @@
 
         <!-- Container - Center - Busca rápida  -->
         <div id="busca__rapida" class="container__center" style="display:none;">
-            <h3 class="h3-text-size text-margin-bottom">Busca Rápida</h3>
-            <p class="p-text-size text-margin-bottom">Encontre e visualize seus pedidos rapidamente. Caso não tenha os dados abaixo ou queira informações mais detalhadas, preencha abaixo a busca avançada.</p>
+            <h3 class="text__h3--size">Busca Rápida</h3>
+            <p class="text__p--size">Encontre e visualize seus pedidos rapidamente. Caso não tenha os dados abaixo ou queira informações mais detalhadas, preencha abaixo a busca avançada.</p>
             <div class="container__center__box">
-                <input class="input-text-size container__center__box__input" type="text" placeholder="Númedo do pedido ou NF-e" required >
-                <button class="button-text-size container__center__box__button">Pesquisar</button>
+                <input class="text__input--size container__center__box__input" type="text" placeholder="Númedo do pedido ou NF-e" required >
+                <button class="text__button--small button__default button__small text__color--second">Pesquisar</button>
             </div>
         </div>
 
         <!-- Container - Center - Busca Avançada  -->
-       <div class="container__center__grid">
-            <p class="p-text-size">Busca Avançada</p>
+       <div id="busca__avancada" class="container__center__grid" style="display:none;">
+            <p class="text__h3--size">Busca Avançada</p>
             <div class="container__center__grid__item">
-                <form>
-                    <input type="text">
-                    <input type="number">
-                    <input type="date">
-                    <input type="number">
+                <form class="container__center__grid__item__form">
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Origem</p>
+                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
+                    </div>
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Nº Pedido, NF ou CT-e</p>
+                        <input class="container__center__grid__item__form__box__input" type="number" placeholder="Digite o número">
+                    </div> 
+                    <div class="container__center__grid__item__form__box">
+                         <p class="text__p--size">Data de emissão NF</p>
+                        <input class="container__center__grid__item__form__box__input" type="date" >
+                    </div>
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Valor da NF</p>
+                        <input class="container__center__grid__item__form__box__input" type="number" placeholder="R$">
+                    </div>
                 </form>
 
-                <form>
-                    <input type="text">
-                    <input type="number">
-                    <input type="date">
-                    <input type="number">
+                <form class="container__center__grid__item__form">
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Estado Destino</p>
+                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="SP">
+                    </div>
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Cidade Destino</p>
+                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
+                    </div> 
+                    <div class="container__center__grid__item__form__box">
+                         <p class="text__p--size">Previsão de entrega</p>
+                        <input class="container__center__grid__item__form__box__input" type="date">
+                    </div>
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Ocorrência</p>
+                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
+                    </div>
                 </form>
 
-                <form>
-                    <input type="text">
-                    <input type="number">
-                    <input type="date">
+                <form class="container__center__grid__item__form">
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Cliente</p>
+                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Digite o CNPJ">
+                    </div>
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">Status do pedido</p>
+                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
+                    </div>
+                    <div class="container__center__grid__item__form__box">
+                        <p class="text__p--size">VIP</p>
+                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
+                    </div>
                 </form>
             </div>
 
             <!-- Button - Pesquisar -->
-            <div>
-                <button class="button-text-small color__text__second button button__small"type="button">Pesquisar</button>
+            <div class="container__center__grid__containerButton">
+                <button class="text__button--small button__default button__small text__color--second"type="button">Pesquisar</button>
             </div> 
        </div>
             

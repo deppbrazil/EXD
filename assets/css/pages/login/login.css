@@ -45,7 +45,7 @@ body,
     height: 100px;
 }
 
-/* Input login / senha  */
+/* Input - Login / Senha  */
 .container__panel__login {
     width: 80%;
     height: 40px;
@@ -60,3 +60,25 @@ body,
 .container__panel__login:focus {
     background-color: #f7f7f7;
 }
+
+/* === Poperties Texts === */
+.text__margin--right {
+	margin-right: 5px;
+}
+
+
+/* === Media querie === */
+@media screen and (max-width:768px) {
+
+    /* Contianer */
+    .container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container__panel {
+        width: 70%;
+       height: 70%;
+    }
+
+ }

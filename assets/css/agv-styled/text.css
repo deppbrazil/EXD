@@ -1,0 +1,32 @@
+.text__h1--size {
+	font-size: 2.8em;
+	line-height: 30px;
+}
+
+.text__h2--size {
+	font-size: 1.8em;
+	line-height: 20px;
+}
+
+.text__h3--size {
+	font-size: 1.6em;
+	line-height: 18px;
+}
+
+.text__h4--size {
+	font-size: 1.2em;
+	line-height: 14px;
+}
+
+.text__input--size,
+.text__a--size,
+.text__p--size,
+.text__button--medium {
+	font-size: 1.4em;
+    line-height: 16px;
+}
+
+.text__button--small {
+	font-size: 0.9em;
+    line-height: 0.9px;
+}

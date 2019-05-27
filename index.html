@@ -11,7 +11,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/base/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/fonts/roboto/roboto.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/pages/login/login.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/theme/blue-orange.css" />
+
+    <!-- agv-styled -->
+    <link rel="stylesheet" type="text/css" href="assets/css/agv-styled/text.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/agv-styled/button.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/agv-styled/input.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/agv-styled/theme/blue-orange.css" />
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
@@ -34,19 +39,19 @@
             <div class="container__panel__logo container__panel__logo--md"></div>
 
             <!-- Login -->
-            <input class="input-text-size container__panel__login" type="text" placeholder="E-mail" required >
-            <input class="input-text-size container__panel__login" type="password" placeholder="Senha" required >
+            <input class="text__input--size container__panel__login" type="text" placeholder="E-mail" required >
+            <input class="text__input--size container__panel__login" type="password" placeholder="Senha" required >
 
             <!-- Enter button -->
-            <button class="button-text-medium color__text__second button button__medium" type="button" onclick="goDashboard()">Entrar</button>
+            <button class="button__default button__medium text__button--medium text__color--second" type="button" onclick="goDashboard()">Entrar</button>
             
             <!-- Reset pass or create new account-->
             <div class="container__panel__text">
-                <a class="a-text-size text-margin-bottom color_text_fourth" href="/assets/pages/login/reset-user.html"><b>Esqueceu-se login ou senha?</b></a>
+                <a class="text__a--size text__margin--bottom text__color--fourth" href="/assets/pages/login/reset-user.html"><b>Esqueceu-se login ou senha?</b></a>
             </div>
             <div class="container__panel__text">
-                <p class="p-text-size text-margin-bottom text-margin-right"><b>ou</b></p>
-                <a class="a-text-size text-margin-bottom color_text_fourth" href="/assets/pages/login/create-user.html"><b>Cadastre-se</b></a>
+                <p class="text__p--size text__margin--right"><b>ou</b></p>
+                <a class="text__a--size text__color--fourth" href="/assets/pages/login/create-user.html"><b>Cadastre-se</b></a>
             </div>
         </div>
     </section>

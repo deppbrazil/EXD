@@ -1,0 +1,30 @@
+/* Base Default */
+.button__default {
+	padding: 8px 2px 8px 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out; // navegadores webkit, como Safari e Chrome
+    -moz-transition: 0.2s ease-in-out; // Firefox
+    -o-transition: 0.2s ease-in-out; // Opera
+}
+
+.button__default:hover {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
+}
+
+/* Small */
+.button__small {
+	width: 100px;
+    height: 25px;
+}
+
+/* Medium */
+.button__medium {
+    width: 180px;
+    height: 45px;
+}

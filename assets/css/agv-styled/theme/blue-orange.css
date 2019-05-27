@@ -2,33 +2,39 @@ body {
     background-color: #ffffff;
 }
 
-/* === Color Texts === */
-.color__text__primary {
+
+/* Texts */
+.text__color--primary {
     color: #010224;
 }
-.color__text__second {
+
+.text__color--second {
     color: #ffffff;
 }
-.color__text__third {
+
+.text__color--third {
     color: #aeaeae;
 }
-.color_text_fourth {
+
+.text__color--fourth {
 	color: rgb(20, 99, 218);
 }
 
-/* === Buttons === */
-/* Default */ 
-.button {
+
+/* Button Default */ 
+.button__default {
     background-color: rgb(24, 26, 107);
 }
-.button:hover {
+
+.button__default:hover {
     background-color: rgb(50, 50, 255);
 }
 
-/* === Login === */
+
 /* Login */
 
-/* === Dashboard === */
+
+
 /* Dashboard */
 .navbarLeft {
     background-color: rgb(24, 26, 107);
