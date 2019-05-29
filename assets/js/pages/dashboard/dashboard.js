@@ -128,3 +128,14 @@ function showScreenSearch() {
     var click = document.getElementById('content');
     click.style.left = "0";
 }
+
+function showBox() {
+
+    var click = document.getElementById('tooltip');
+
+    if (click.style.display === "none") {
+        click.style.display = "block";
+    } else {
+        click.style.display = "none";
+    }
+}

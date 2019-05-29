@@ -1,3 +1,13 @@
+/* Flexbox */
+.navbatTop__panelRight,
+.navbatTop__panelRight__text, 
+.navbatTop__panelRight__box_exit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 /* NavbarTop */
 .navbarTop {
     width: 100%;
@@ -11,5 +21,94 @@
 
 /* Margin NavbarTop */
 .navbarTop__padding {
-    margin: 20px;
+    margin: 2%;
+}
+
+.navbarTop__maarginBottom {
+    margin-bottom: 5px;
+}
+
+.navbatTop__panelRight {
+    width: auto;
+    height: 60px;
+}
+
+.navbatTop__panelRight__text {
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbatTop__panelRight__photo {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #848484;
+}
+
+.navbatTop__panelRight__arrow {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.tooltip__arrow {
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    border: 10px solid;
+    border-color: #848484 transparent transparent transparent;
+}
+
+.navbatTop__panelRight__box {
+    display: none;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    width: 200px;
+    background-color: #ffffff;
+}
+.navbatTop__panelRight__box:before {
+    border: 10px solid transparent;
+    margin-top: -35px;
+    margin-left: 150px;
+    border-bottom-color: #ffffff;
+    content: "";
+    position: absolute;
+}
+
+.navbatTop__panelRight__box_photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    float: left;
+    background-color: #000000;
+}
+
+.navbatTop__panelRight__box_photo__edit {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+
+.navbatTop__panelRight__box_text {
+    width: 80%;
+    float: right;
+}
+
+.navbatTop__panelRight__box_exit {
+    width: 85%;
+    height: 30px;
+    position: absolute;
+    bottom: 40px;
 }
