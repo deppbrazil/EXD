@@ -6,6 +6,13 @@
     color: #ffffff;
 }
 
+.padding__bottom--5px {
+    padding-bottom: 5px;
+}
+.padding__left--10px {
+    padding-left: 10px;
+}
+
 /* Both */
 .container,
 .container__header,
@@ -14,6 +21,13 @@
 .container__center__box,
 .container__center__grid__item__form,
 .container__center__grid__containerButton,
+.container__center__dashboard,
+.container__center__dashboard__box,
+.container__center__dashboard__box__items,
+.container__center__dashboard__box__items__top,
+.container__center__dashboard__box__items__bottom,
+.container__center__dashboard__box__footer,
+.container__center__dashboard__box__footer__alignContent,
 .container__footer,
 .container__footer__box,
 .container__footer__box__item,
@@ -160,11 +174,124 @@
     justify-content: flex-end;
 }
 
+/* Container - Center - Dashboard */
+.container__center__dashboard {
+    display: none;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 60px;
+    justify-content: space-around;
+}
+
+.container__center__dashboard__box {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.container__center__dashboard__box__header {
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.container__center__dashboard__box__items {
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+}
+
+.container__center__dashboard__box__items__top {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(24, 26, 107);
+}
+
+.container__center__dashboard__box__items__top__icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: -20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container__center__dashboard__box__items__top__icon--PR {
+    background-image: url("../../../../icons/tinypng/pedido-recebido.png");
+}
+
+.container__center__dashboard__box__items__top__icon--PP {
+    background-image: url("../../../../icons/tinypng/preparacao-pedido.png");
+}
+
+.container__center__dashboard__box__items__top__icon--ET {
+    background-image: url("../../../../icons/tinypng/em-transito.png");
+}
+
+.container__center__dashboard__box__items__top__icon--ER {
+    background-image: url("../../../../icons/tinypng/pedido-realizado.png");
+}
+
+.container__center__dashboard__box__items__bottom {
+    width: 100%;
+    height: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+    background-color: #e1e1e1;
+}
+
+.container__center__dashboard__box__items__bottom__span {
+    width: 15px;
+    height: 15px;
+    margin-top: -8px;
+    margin-left: 70%;
+    position: relative;
+    background-image: url("../../../../icons/tinypng/alert.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container__center__dashboard__box__footer {
+    width: 95%;
+    height: 90%;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container__center__dashboard__box__footer__items {
+    width: 100%;
+    height: 100%;
+}
+
+.container__center__dashboard__box__footer__items--left {
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: #cdcdcd;
+}
+
+.container__center__dashboard__box__footer__items--right {
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    background-color: #e1e1e1;
+}
+
+.container__center__dashboard__box__footer__alignContent {
+    width: 100%;
+    height: 90%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
 
 /* Footer */
 .container__footer {
     width: 100%;
-    height: 70px;
+    height: 60px;
     position: absolute;
     bottom: 0;
     background-color: rgb(211, 211, 211);

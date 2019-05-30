@@ -31,21 +31,21 @@
 
         <!-- Header -->
         <div class="container__header">
-            <div class="container__header__item container__header__item--borderLeft" onclick="showBuscaRapida()">
+            <div class="container__header__item container__header__item--borderLeft" onclick="btnBuscaRapida()">
                 <h2 class="h2-text-size color__text__primary">Busca Rápida</h2>
             </div>
 
-            <div class="container__header__item container__header__item--borderCenter" onclick="showBuscaAvancada()">
+            <div class="container__header__item container__header__item--borderCenter" onclick="btnBuscaAvancada()">
                 <h2 class="h2-text-size color__text__primary">Busca Avançada</h2>
             </div>
 
-            <div class="container__header__item container__header__item--borderRight">
+            <div class="container__header__item container__header__item--borderRight" onclick="btnDashboard()">
                 <h2 class="h2-text-size color__text__primary">Dashboard</h2>
             </div>
         </div>
 
         <!-- Container - Center - Busca rápida  -->
-        <div id="busca__rapida" class="container__center" style="display:none;">
+        <div id="busca__rapida" class="container__center">
             <h3 class="text__h3--size">Busca Rápida</h3>
             <p class="text__p--size">Encontre e visualize seus pedidos rapidamente. Caso não tenha os dados abaixo ou queira informações mais detalhadas, preencha abaixo a busca avançada.</p>
             <div class="container__center__box">
@@ -117,7 +117,86 @@
                 <button class="text__button--small button__default button__small text__color--second"type="button">Pesquisar</button>
             </div> 
        </div>
-            
+
+
+       <!-- Container - Center - Dashboard  -->
+        <div id="dashboard" class="container__center__dashboard">
+            <div class="container__center__dashboard__box container__center__dashboard__box__header">
+                
+                <div class="container__center__dashboard__box__items">
+                    <!-- div top-down -->
+                    <div class="container__center__dashboard__box__items__top">
+                        <h4 class="text__h4--size text__color--second padding__left--10px">Pedido</h4>
+                        <h4 class="text__h4--size text__color--second padding__left--10px">Recebido</h4>
+                        <div class="container__center__dashboard__box__items__top__icon container__center__dashboard__box__items__top__icon--PR"></div>
+                    </div>
+
+                    <!-- div bottom-up -->
+                    <div class="container__center__dashboard__box__items__bottom">
+                        <h1 class="text__h1--size--large">0</h1>
+                        <h4 class="text__h4--size">R$ 0,00</h4>
+                    </div>
+                </div>
+
+                <div class="container__center__dashboard__box__items">
+                    <!-- div top-down -->
+                    <div class="container__center__dashboard__box__items__top">
+                        <h4 class="text__h4--size text__color--second padding__left--10px">Preparação</h4>
+                        <h4 class="text__h4--size text__color--second padding__left--10px">do pedido</h4>
+                        <div class=" container__center__dashboard__box__items__top__icon container__center__dashboard__box__items__top__icon--PP"></div>
+                    </div>
+
+                    <!-- div bottom-up -->
+                    <div class="container__center__dashboard__box__items__bottom">
+                        <h1 class="text__h1--size--large">2.848</h1>
+                        <h4 class="text__h4--size">R$ 75.405.395,30</h4>
+                    </div>
+                </div>
+
+                <div class="container__center__dashboard__box__items">
+                    <!-- div bottom-up -->
+                    <div class="container__center__dashboard__box__items__top">
+                        <h4 class="text__h4--size text__color--second padding__left--10px">Em</h4>
+                        <h4 class="text__h4--size text__color--second padding__left--10px">Trânsito</h4>
+                        <div class=" container__center__dashboard__box__items__top__icon container__center__dashboard__box__items__top__icon--ET"></div>
+                    </div>
+
+                    <!-- div bottom-up -->
+                    <div class="container__center__dashboard__box__items__bottom">
+                        <span class="container__center__dashboard__box__items__bottom__span"></span>
+                        <h1 class="text__h1--size--large">1.085</h1>
+                        <h4 class="text__h4--size">R$ 45.564.456,90</h4>
+                    </div>
+                </div>
+                
+                <div class="container__center__dashboard__box__items">
+                    <!-- div bottom-up -->
+                    <div class="container__center__dashboard__box__items__top">
+                        <h4 class="text__h4--size text__color--second padding__left--10px">Entrega</h4>
+                        <h4 class="text__h4--size text__color--second padding__left--10px">Realizada</h4>
+                        <div class=" container__center__dashboard__box__items__top__icon container__center__dashboard__box__items__top__icon--ER"></div>
+                    </div>
+
+                    <!-- div bottom-up -->
+                    <div class="container__center__dashboard__box__items__bottom">
+                        <span class="container__center__dashboard__box__items__bottom__span"></span>
+                        <h1 class="text__h1--size--large">6.392</h1>
+                        <h4 class="text__h4--size">R$ 126.564.456,90</43>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__center__dashboard__box container__center__dashboard__box__footer">
+                <div class="container__center__dashboard__box__footer__items container__center__dashboard__box__footer__items--left">
+                    <h2 class="h2__text--size">Faturamento por Região</h2>
+                    <div class="container__center__dashboard__box__footer__alignContent"><h3>Aqui vai o JS</h3></div>
+                </div>
+                <div class="container__center__dashboard__box__footer__items container__center__dashboard__box__footer__items--right">
+                    <h2 class="h2__text--size">Evolução do Faturamento Mensal</h2>
+                    <div class="container__center__dashboard__box__footer__alignContent"><h3>Aqui vai o JS</h3></div>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer -->
         <div class="container__footer">
