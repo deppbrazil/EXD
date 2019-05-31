@@ -35,3 +35,11 @@
 	font-size: 0.9em;
     line-height: 0.9px;
 }
+
+.text__align--center {
+	text-align: center;
+}
+
+.text__margin--right {
+	margin-right: 5px;
+}

@@ -13,21 +13,26 @@ body {
 }
 
 .text__color--third {
-    color: #aeaeae;
+    color: #787878;
 }
 
 .text__color--fourth {
-	color: rgb(20, 99, 218);
+	color: #1463da;
 }
 
 
 /* Button Default */ 
 .button__default {
-    background-color: rgb(24, 26, 107);
+    background-color: #181a6b;
 }
 
 .button__default:hover {
-    background-color: rgb(50, 50, 255);
+    background-color: #3232ff;
+}
+
+.button__flat {
+    border: 2px solid #181a6b;;
+    background-color: transparent;
 }
 
 
@@ -37,5 +42,5 @@ body {
 
 /* Dashboard */
 .navbarLeft {
-    background-color: rgb(24, 26, 107);
+    background-color: #181a6b;
 }
