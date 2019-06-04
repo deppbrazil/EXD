@@ -1,0 +1,176 @@
+.container__buscaRapida {
+    display: none;
+}
+
+.container__detalhes__box__top,
+.container__detalhes__box__top__panel,
+.container__detalhes__box__top__panel__item,
+.container__detalhes__header,
+.container__detalhes__header__boxRight,
+.container__detalhes__header__boxRight__item--item3,
+.container__detalhes__box__footer,
+.container__detalhes__box__footer__left__item,
+.container__detalhes__box__footer__right__panel__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__detalhes__header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid silver;
+}
+
+.container__detalhes__header__boxLeft {
+    padding-left: 30px;
+}
+
+.container__detalhes__header__boxRight {
+    width: auto;
+    height: 50px;
+    justify-content: center;
+}
+
+.container__detalhes__header__boxRight__item {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__detalhes__header__boxRight__item--item1 {
+    background-image: url("../../../../icons/tinypng/alert.png");
+}
+
+.container__detalhes__header__boxRight__item--item2 {
+    background-image: url("../../../../icons/tinypng/clock.png");
+}
+
+.container__detalhes__header__boxRight__item--item3 {
+    width: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container__detalhes__box {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Content - Box Top */
+.container__detalhes__box__top {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container__detalhes__box__top__panel {
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container__detalhes__box__top__panel__item {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__detalhes__box__top__panel__item__icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 5px;
+    border-radius: 80px;
+    border: 2px solid #181a6b;
+    background-color: #181a6b;
+}
+
+.container__detalhes__box__top__panel__item__step {
+    width: 80px;
+    height: 8px;
+    margin-bottom: 30px;
+    background-color: #181a6b;
+}
+
+/* Content - Box Footer */
+.container__detalhes__box__footer {
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container__detalhes__box__footer__left {
+    width: 25%;
+    height: 100%;
+    border-top: 1px solid silver;
+    border-right: 1px solid silver;
+    background-color: #f0f0f0;
+}
+
+.container__detalhes__box__footer__left__item {
+    width: auto;
+    height: 40px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 10px;
+
+}
+
+/* Footer - Panel Right */
+.container__detalhes__box__footer__right {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid silver;
+    background-color: #f0f0f0;
+}
+
+.container__detalhes__box__footer__right__panel {
+    width: 50%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container__detalhes__box__footer__right__panel__header {
+    justify-content: flex-start;
+}
+
+.container__detalhes__box__footer__right__panel__header__icon {
+    width: 60px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__detalhes__box__footer__right__panel__header__icon--DT {
+    background-image: url("../../../../icons/tinypng/destinatario.png");
+}
+
+.container__detalhes__box__footer__right__panel__header__icon--RT {
+    background-image: url("../../../../icons/tinypng/remetente.png");
+}
+
+.container__detalhes__box__footer__right__item {
+    width: auto;
+    height: 40px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 10px;
+
+}

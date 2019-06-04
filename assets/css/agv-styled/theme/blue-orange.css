@@ -19,6 +19,9 @@ body {
 .text__color--fourth {
 	color: #1463da;
 }
+.text__decoration--underline--1463da {
+	border-bottom: 1px solid #1463da;
+}
 
 
 /* Button Default */ 
