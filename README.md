@@ -1,15 +1,9 @@
-# EXD | AGV #
+# New Frontend | EXD System #
 
 ### Using ###
-* HTML5
-* CSS3
-* Javascript
+[![icon html5](https://icongr.am/devicon/html5-original.svg)](https://github.com/deppbrazil/frontend-test-keyrus) 
+[![icon css3](https://icongr.am/devicon/css3-original.svg)](https://github.com/deppbrazil/frontend-test-keyrus) 
+[![icon javascript](https://icongr.am/devicon/javascript-original.svg)](https://github.com/deppbrazil/frontend-test-keyrus)
 
-### Architeture ###
+### CSS Architeture ###
 * [BEM CSS - Block Element Modifier](http://getbem.com/)
-
-### Release ###
-* [Version 0.4.0](./release.md)
-* [Version 0.3.0](./release.md)
-* [Version 0.2.0](./release.md)
-* [Version 0.1.0](./release.md)
