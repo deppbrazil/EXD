@@ -1,4 +1,4 @@
-# New Frontend | EXD System #
+# New Front-end | EXD System #
 
 ### Using ###
 [![icon html5](https://icongr.am/devicon/html5-original.svg)](https://github.com/deppbrazil/frontend-test-keyrus) 
