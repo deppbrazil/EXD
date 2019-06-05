@@ -1,9 +1,12 @@
-.container {
+/* Busca Rápida */
+/*.container {
     display: none;
 }
 
+/* Flexbox */
 .container__buscaRapida,
 .container__buscaRapida__header,
+.container__buscaRapida__header__boxButton,
 .container__buscaRapida__header__boxText,
 .container__buscaRapida__ul__items,
 .container__buscaRapida__ul__items__item1,
@@ -34,6 +37,12 @@
     background-color: #ffffff;
 }
 
+.container__buscaRapida__header__boxButton {
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+}
+
 .container__buscaRapida__header__boxText {
     width: 170px;
     height: 100%;
@@ -48,6 +57,7 @@
     border-top: 1px solid silver;
     background-color: #ffffff;
 }
+
 
 .container__buscaRapida__ul {
     width: 100%;

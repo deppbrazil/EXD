@@ -43,3 +43,7 @@
 .text__margin--right {
 	margin-right: 5px;
 }
+
+.text__margin--top {
+	margin-top: 5px;
+}

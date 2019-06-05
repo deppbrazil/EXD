@@ -29,7 +29,7 @@
 
 <body>
 
-    <section class="container">
+    <section id="homeBuscaRapida"  class="container">
 
         <!-- Header -->
         <div class="container__header">
@@ -52,14 +52,15 @@
             <p class="text__p--size">Encontre e visualize seus pedidos rapidamente. Caso não tenha os dados abaixo ou queira informações mais detalhadas, preencha abaixo a busca avançada.</p>
             <div class="container__center__box">
                 <input class="text__input--size container__center__box__input" type="text" placeholder="Númedo do pedido ou NF-e" required >
-                <button class="text__button--small button__default button__small text__color--second">Pesquisar</button>
+                <button class="text__button--small button__default button__small text__color--second" onclick="goListBucaRapida()">Pesquisar</button>
             </div>
         </div>
 
         <!-- Container - Center - Busca Avançada  -->
        <div id="busca__avancada" class="container__center__grid" style="display:none;">
-            <p class="text__h3--size">Busca Avançada</p>
             <div class="container__center__grid__item">
+
+                <h3 class="text__h3--size">Busca Avançada</h3>
                 <form class="container__center__grid__item__form">
                     <div class="container__center__grid__item__form__box">
                         <p class="text__p--size">Origem</p>
@@ -243,8 +244,15 @@
         </div>
     </section>
 
-    <section class="container__buscaRapida">
+    <!-- Busca Rápida -->
+    <section id="busca__rapida__detalhes" class="container__buscaRapida">
         <header class="container__buscaRapida__header">
+            
+            <!-- Button Prev -->
+            <div class="container__buscaRapida__header__boxButton" onclick="btnGoHomeBuscaRapida()">
+                <div class="button__default__arrow--left "></div>
+            </div>
+
             <div class="container__buscaRapida__header__boxText">
                 <h3 class="text__color--third text__h3--size">Busca Rápida</h3>
                 <div class="container__buscaRapida__header__boxText__labelText">
@@ -255,13 +263,14 @@
                     <h4 class="text__color--primary text__margin--right">35</h4>
                     <h4 class="text__color--third">Resultados</h4>
                 </div>
+
             </div>
             <input class="text__input--size container__center__box__input" type="text" placeholder="Deseja fazer nova busca? Insira NF ou nº do pedido" required >
             <button class="text__button--small button__default button__small text__color--second"type="button">Pesquisar</button>
         </header>
 
         <div class="container__buscaRapida__searching">
-            
+           
         </div>
 
         <div class="container__buscaRapida__ul">
@@ -343,7 +352,7 @@
                 </div>
 
                 <div class="container__buscaRapida__ul__items__item3">
-                    <button class="text__button--small button__flat button__small text__color--primary">Detalhes</button>
+                    <button class="text__button--small button__flat button__small text__color--primary" onclick="btnGoDetalhes()" >Detalhes</button>
                     <div class="container__buscaRapida__ul__items__item3__anexo"></div>
                 </div>
             </div>
@@ -426,7 +435,7 @@
                 </div>
 
                 <div class="container__buscaRapida__ul__items__item3">
-                    <button class="text__button--small button__flat button__small text__color--primary">Detalhes</button>
+                    <button class="text__button--small button__flat button__small text__color--primary" onclick="btnGoDetalhes()" >Detalhes</button>
                     <div class="container__buscaRapida__ul__items__item3__anexo"></div>
                 </div>
             </div>
@@ -508,7 +517,7 @@
                 </div>
 
                 <div class="container__buscaRapida__ul__items__item3">
-                    <button class="text__button--small button__flat button__small text__color--primary">Detalhes</button>
+                    <button class="text__button--small button__flat button__small text__color--primary" onclick="btnGoDetalhes()" >Detalhes</button>
                     <div class="container__buscaRapida__ul__items__item3__anexo"></div>
                 </div>
             </div>
@@ -590,7 +599,7 @@
                 </div>
 
                 <div class="container__buscaRapida__ul__items__item3">
-                    <button class="text__button--small button__flat button__small text__color--primary">Detalhes</button>
+                    <button class="text__button--small button__flat button__small text__color--primary" onclick="btnGoDetalhes()" >Detalhes</button>
                     <div class="container__buscaRapida__ul__items__item3__anexo"></div>
                 </div>
             </div>
@@ -672,7 +681,7 @@
                 </div>
 
                 <div class="container__buscaRapida__ul__items__item3">
-                    <button class="text__button--small button__flat button__small text__color--primary">Detalhes</button>
+                    <button class="text__button--small button__flat button__small text__color--primary" onclick="btnGoDetalhes()" >Detalhes</button>
                     <div class="container__buscaRapida__ul__items__item3__anexo"></div>
                 </div>
             </div>
@@ -685,13 +694,26 @@
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
     <!-- Section - Detalhes -->
-    <section class="container__detalhes">
+    <section id="detalhes" class="container__detalhes">
 
         <!-- Header -->
         <div class="container__detalhes__header">
             <div class="container__detalhes__header__boxLeft">
+
+                <!-- Button Prev -->
+                <div class="button__arrow--left" onclick="btnGoBuscaRapida()"></div>
+
                 <h3 class="text__h3--size text__color--primary">Status do pedido</h3>
             </div>
 
@@ -708,93 +730,107 @@
         <!-- Content -->
         <div class="container__detalhes__box">
             
-            <!-- Box Top -->
+            <!-- Content - Box Timeline -->
             <div class="container__detalhes__box__top">
                 <div class="container__detalhes__box__top__panel">
                     
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class="container__detalhes__box__top__panel__item__icon"></div>
-                        <h4>Pedido</h4>
-                        <h4>Recebido</h4>
-                        <h4>24/02/2019</h4>
+                        <div class="container__detalhes__box__top__panel__item__icon container__detalhes__box__top__panel__item__icon--PR"></div>
+                        <h4 class="text__color--primary">Pedido</h4>
+                        <h4 class="text__color--primary">Recebido</h4>
+                        <h4 class="text__color--third text__margin--top">24/02/2019</h4>
                     </div>
 
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class="container__detalhes__box__top__panel__item__step"></div>
+                        <div class="container__detalhes__box__top__panel__item__step container__detalhes__box__top__panel__item__step--active"></div>
                     </div>
 
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class="container__detalhes__box__top__panel__item__icon"></div>
-                        <h4>Preparação</h4>
-                        <h4>do pedido</h4>
-                        <h4>24/02/2019</h4>
+                        <div class="container__detalhes__box__top__panel__item__icon container__detalhes__box__top__panel__item__icon--PP"></div>
+                        <h4 class="text__color--primary">Preparação</h4>
+                        <h4 class="text__color--primary">do pedido</h4>
+                        <h4 class="text__color--third text__margin--top">24/02/2019</h4>
                     </div>
 
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class="container__detalhes__box__top__panel__item__step"></div>
+                        <div class="container__detalhes__box__top__panel__item__step container__detalhes__box__top__panel__item__step--active"></div>
                     </div>
 
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class="container__detalhes__box__top__panel__item__icon"></div>
-                        <h4>Em</h4>
-                        <h4>Trânsito</h4>
-                        <h4>24/02/2019</h4>
+                        <div class="container__detalhes__box__top__panel__item__icon container__detalhes__box__top__panel__item__icon--ET"></div>
+                        <h4 class="text__color--primary">Em</h4>
+                        <h4 class="text__color--primary">Trânsito</h4>
+                        <h4 class="text__color--third text__margin--top">24/02/2019</h4>
                     </div>
 
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class="container__detalhes__box__top__panel__item__step"></div>
+
+                        <!-- Searching Road -->
+                        <div class="container__detalhes__box__top__panel__item__seaching container__detalhes__box__top__panel__item__seaching--active"></div>
+
+                        <div class="container__detalhes__box__top__panel__item__step container__detalhes__box__top__panel__item__step--desable">
+                            <div class="container__detalhes__box__top__panel__item__step__balls container__detalhes__box__top__panel__item__step__balls--active"></div>
+                            <div class="container__detalhes__box__top__panel__item__step__balls container__detalhes__box__top__panel__item__step__balls--active"></div>
+                            <div class="container__detalhes__box__top__panel__item__step__balls container__detalhes__box__top__panel__item__step__balls--active"></div>
+                            <div class="container__detalhes__box__top__panel__item__step__balls container__detalhes__box__top__panel__item__step__balls--desable"></div>
+                            <div class="container__detalhes__box__top__panel__item__step__balls container__detalhes__box__top__panel__item__step__balls--desable"></div>
+                            <div class="container__detalhes__box__top__panel__item__step__balls container__detalhes__box__top__panel__item__step__balls--desable"></div>
+                            <div class="container__detalhes__box__top__panel__item__step__balls container__detalhes__box__top__panel__item__step__balls--desable"></div>
+                        </div>
                     </div>
 
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class="container__detalhes__box__top__panel__item__icon"></div>
-                        <h4>Pedido</h4>
-                        <h4>Realizado</h4>
-                        <h4>24/02/2019</h4>
+                        <div class="container__detalhes__box__top__panel__item__icon container__detalhes__box__top__panel__item__icon--PRD"></div>
+                        <h4 class="text__color--primary">Pedido</h4>
+                        <h4 class="text__color--primary">Realizado</h4>
+                        <h4 class="text__color--third text__margin--top">24/02/2019</h4>
                     </div>
 
+
+
                     <div class="container__detalhes__box__top__panel__item">
-                        <div class=""></div>
+                        <div class="container__detalhes__box__top__panel__item__clip"></div>
                     </div>
                     
                 </div>
             </div>
 
-            <!-- Box Footer -->
+            <!-- Box Content -->
             <div class="container__detalhes__box__footer">
 
-                <!-- Box Left -->
+                <!-- Box Content - Box Left -->
                 <div class="container__detalhes__box__footer__left">
                     <div class="container__detalhes__box__footer__left__item">
-                        <h3 class="text__h3--size text__color--primary">Detalhes do pedido<h3>
+                        <h3 class="text__h3--size text__color--third">Detalhes do pedido<h3>
                     </div>
 
                     <div class="container__detalhes__box__footer__left__item">
-                        <h4 class="text__h4--size text__color--primary">Nota Fiscal<h4>
+                        <h4 class="text__h4--size text__color--third">Nota Fiscal<h4>
                         <h4 class="text__h4--size text__color--fourth text__decoration--underline--1463da">000203949<h4>
                     </div>
 
                     <div class="container__detalhes__box__footer__left__item">
-                        <h4 class="text__h4--size text__color--primary">CT-e<h4>
-                        <h4 class="text__h4--size text__color--primary">1452445<h4>
+                        <h4 class="text__h4--size text__color--third">CT-e<h4>
+                        <h4 class="text__h4--size text__color--third">1452445<h4>
                     </div>
 
                     <div class="container__detalhes__box__footer__left__item">
-                        <h4 class="text__h4--size text__color--primary">Valor<h4>
-                        <h4 class="text__h4--size text__color--primary">R$ 59.000<h4>
+                        <h4 class="text__h4--size text__color--third">Valor<h4>
+                        <h4 class="text__h4--size text__color--third">R$ 59.000<h4>
                     </div>
 
                     <div class="container__detalhes__box__footer__left__item">
-                        <h4 class="text__h4--size text__color--primary">Volume<h4>
-                        <h4 class="text__h4--size text__color--primary">5<h4>
+                        <h4 class="text__h4--size text__color--third">Volume<h4>
+                        <h4 class="text__h4--size text__color--third">5<h4>
                     </div>
 
-                    <div class="container__detalhes__box__footer__left__item">
-                        <h4 class="text__h4--size text__color--primary">Peso (kg)<h4>
-                        <h4 class="text__h4--size text__color--primary">43,23<h4>
+                    <div class="container__detalhes__box__footer__left__item container__detalhes__box__footer__left__item--marginBottom">
+                        <h4 class="text__h4--size text__color--third">Peso (kg)<h4>
+                        <h4 class="text__h4--size text__color--third">43,23<h4>
                     </div>             
                 </div>
 
-                <!-- Box Right -->
+                <!-- Box Content - Box Right -->
                 <div class="container__detalhes__box__footer__right">
                     
                     <!-- Left -->
