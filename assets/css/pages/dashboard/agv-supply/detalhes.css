@@ -1,5 +1,5 @@
 /* Busca Rápida List */
-/*.container__buscaRapida {
+.container__buscaRapida {
     display: none;
 }
 
@@ -99,27 +99,69 @@
     height: 50px;
     margin-bottom: 5px;
     border-radius: 100px;
-    border: 5px solid #181a6b;
-    background-color: #181a6b;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.container__detalhes__box__top__panel__item__icon--PR {
-    background-image: url("../../../../icons/tinypng/pedido-recebido.png");
+.container__detalhes__box__top__panel__item__icon--PR--active {
+    border: 5px solid #181a6b;
+    background-color: #181a6b;
+    background-image: url("../../../../icons/tinypng/pedido-recebido-active.png");
 }
 
-.container__detalhes__box__top__panel__item__icon--PP {
-    background-image: url("../../../../icons/tinypng/preparacao-pedido.png");
+.container__detalhes__box__top__panel__item__icon--PR--disable {
+    border: 5px solid #d7d7d7;
+    background-color: #d7d7d7;
+    background-image: url("../../../../icons/tinypng/pedido-recebido-disable.png");
 }
 
-.container__detalhes__box__top__panel__item__icon--ET {
-    background-image: url("../../../../icons/tinypng/em-transito.png");
+.container__detalhes__box__top__panel__item__icon--PP--active {
+    border: 5px solid #181a6b;
+    background-color: #181a6b;
+    background-image: url("../../../../icons/tinypng/preparacao-pedido-active.png");
 }
 
-.container__detalhes__box__top__panel__item__icon--PRD {
-    background-image: url("../../../../icons/tinypng/pedido-realizado.png");
+.container__detalhes__box__top__panel__item__icon--PP--disable {
+    border: 5px solid #d7d7d7;
+    background-color: #d7d7d7;
+    background-image: url("../../../../icons/tinypng/preparacao-pedido-disable.png");
+}
+
+.container__detalhes__box__top__panel__item__icon--ET--active {
+    border: 5px solid #181a6b;
+    background-color: #181a6b;
+    background-image: url("../../../../icons/tinypng/em-transito-active.png");
+}
+
+.container__detalhes__box__top__panel__item__icon--ET--disable {
+    border: 5px solid #d7d7d7;
+    background-color: #d7d7d7;
+    background-image: url("../../../../icons/tinypng/em-transito-disable.png");
+}
+
+.container__detalhes__box__top__panel__item__icon--ET--complete {
+    border: 5px solid #181a6b;
+    background-color: #181a6b;
+    background-image: url("../../../../icons/tinypng/em-transito-complete.png");
+}
+
+.container__detalhes__box__top__panel__item__icon--PRD--active {
+    border: 5px solid #181a6b;
+    background-color: #181a6b;
+    background-image: url("../../../../icons/tinypng/pedido-realizado-active.png");
+}
+
+.container__detalhes__box__top__panel__item__icon--PRD--disable {
+    border: 5px solid #d7d7d7;
+    background-color: #d7d7d7;
+    background-image: url("../../../../icons/tinypng/entrega-realizada-disable.png");
+}
+
+.container__detalhes__box__top__panel__item__icon--PRD--complete {
+    border: 5px solid #181a6b;
+    background-color: #181a6b;
+    background-image: url("../../../../icons/tinypng/entrega-realizada-complete.png");
 }
 
 .container__detalhes__box__top__panel__item__seaching {
@@ -139,8 +181,9 @@
     background-color: #181a6b;
 }
 
-.container__detalhes__box__top__panel__item__seaching--desable {
+.container__detalhes__box__top__panel__item__seaching--disable {
     background-color: #7e7e7e;
+    cursor: auto;
 }
 
 .container__detalhes__box__top__panel__item__step {
@@ -150,11 +193,11 @@
     margin-bottom: 40px;
 }
 
-.container__detalhes__box__top__panel__item__step--active {
+.container__detalhes__box__top__panel__item__step--complete {
     background-color: #181a6b;
 }
 
-.container__detalhes__box__top__panel__item__step--desable {
+.container__detalhes__box__top__panel__item__step--disable {
     background-color: #d7d7d7;
 }
 
@@ -168,7 +211,7 @@
     background-color: #181a6b;
 }
 
-.container__detalhes__box__top__panel__item__step__balls--desable {
+.container__detalhes__box__top__panel__item__step__balls--disable {
     background-color: #7e7e7e;
 }
 
@@ -178,12 +221,21 @@
     border-radius: 40px;
     margin-left: 10px;
     margin-bottom: 40px;
-    background-size: 50%;
+    background-size: 60%;
     cursor: pointer;
     border: 1px solid #7e7e7e;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("");
+}
+
+.container__detalhes__box__top__panel__item__clip--active {
+    background-image: url("../../../../icons/tinypng/attachment-active.png");
+    border: 1px solid #181a6b;
+}
+
+.container__detalhes__box__top__panel__item__clip--disable {
+    background-image: url("../../../../icons/tinypng/attachment-disable.png");
+    cursor: auto;
 }
 
 /* Box Content */

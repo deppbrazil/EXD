@@ -1,5 +1,5 @@
 /* Busca Rápida */
-/*.container {
+.container {
     display: none;
 }
 
@@ -120,34 +120,110 @@
     height: 40px;
     border-radius: 80px;
     display: block;
-    border: 1px solid #181a6b;
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #181a6b;*/
 }
 
-.container__buscaRapida__ul__items__item2__boxElements__elements__icon--PR {
-    background-image: url("../../../../icons/tinypng/pedido-recebido.png");
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--PR--active {
+    background-image: url("../../../../icons/tinypng/pedido-recebido-active.png");
+    border: 1px solid #181a6b;
+    background-color: #181a6b;
+    
 }
 
-.container__buscaRapida__ul__items__item2__boxElements__elements__icon--PP {
-    background-image: url("../../../../icons/tinypng/preparacao-pedido.png");
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--PR--disable {
+    background-image: url("../../../../icons/tinypng/pedido-recebido-disable.png");
+    border: 1px solid #d7d7d7;
+    background-color:  #d7d7d7;
 }
 
-.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ET {
-    background-image: url("../../../../icons/tinypng/em-transito.png");
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--PP--active {
+    background-image: url("../../../../icons/tinypng/preparacao-pedido-active.png");
+    border: 1px solid #181a6b;
+    background-color: #181a6b;
 }
 
-.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ER {
-    background-image: url("../../../../icons/tinypng/entrega-realizada.png");
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--PP--disable {
+    background-image: url("../../../../icons/tinypng/preparacao-pedido-disable.png");
+    border: 1px solid #d7d7d7;
+    background-color:  #d7d7d7;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ET--active {
+    background-image: url("../../../../icons/tinypng/em-transito-active.png");
+    border: 1px solid #181a6b;
+    background-color: #181a6b;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ET--disable {
+    background-image: url("../../../../icons/tinypng/em-transito-disable.png");
+    border: 1px solid #d7d7d7;
+    background-color:  #d7d7d7;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ET--complete {
+    background-image: url("../../../../icons/tinypng/em-transito-complete.png");
+    border: 1px solid #181a6b;
+    background-color: #181a6b;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ER--active {
+    background-image: url("../../../../icons/tinypng/entrega-realizada-active.png");
+    border: 1px solid #181a6b;
+    background-color: #181a6b;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ER--disable {
+    background-image: url("../../../../icons/tinypng/entrega-realizada-disable.png");
+    border: 1px solid #d7d7d7;
+    background-color:  #d7d7d7;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__elements__icon--ER--complete {
+    background-image: url("../../../../icons/tinypng/entrega-realizada-complete.png");
+    border: 1px solid #181a6b;
+    background-color: #181a6b;
 }
 
 .container__buscaRapida__ul__items__item2__boxElements__divisor {
     width: 40px;
     height: 10px;
     margin-bottom: 33px;
-    background-color: #181a6b;*/
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor--marginTop {
+    margin-top: -35px;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor__searching {
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    margin-top: -30px;
+    position: relative;
+    background-size: 60%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../../icons/tinypng/search.png");
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor__searching--active {
+    background-color: #181a6b;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor__searching--disable {
+    background-color:  #b3b3b3;
+    cursor: auto;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor--active {
+     background-color: #181a6b;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor--disable {
+    background-color:  #d7d7d7;
 }
 
 .container__buscaRapida__ul__items__item2__boxElements__divisor__balls {
@@ -155,7 +231,14 @@
     height: 8px;
     border-radius: 50px;
     margin: .6px;
-    /*background-color: #4a4a4a;*/
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor__balls--active {
+    background-color: #181a6b;
+}
+
+.container__buscaRapida__ul__items__item2__boxElements__divisor__balls--disable {
+    background-color: #d7d7d7;
 }
 
 .container__buscaRapida__ul__items__item3 {
@@ -168,5 +251,19 @@
     height: 20px;
     border-radius: 50px;
     margin: 4%;
-    background-color: #181a6b;
+    cursor: pointer;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__buscaRapida__ul__items__item3__anexo--disable {
+    background-image: url("../../../../icons/tinypng/attachment-disable.png");
+    border: 1px solid #d7d7d7;
+    cursor: auto;
+}
+
+.container__buscaRapida__ul__items__item3__anexo--active {
+    background-image: url("../../../../icons/tinypng/attachment-active.png");
+    border: 1px solid #181a6b;
 }
