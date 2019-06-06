@@ -99,64 +99,64 @@
 /* === WMS === */
 /* Item List NavbarLeft - Icon WMS */
 .navbarLeft__list__container__item__icon__left--WMS {
-    background-image: url("../../../icons/icon-wms.png");
+    background-image: url("../../../icons/tinypng/icon-wms.png");
 }
 .navbarLeft:hover .navbarLeft__list__container__item__icon__left--WMS {
-    background-image: url("../../../icons/agv-wms.png");
+    background-image: url("../../../icons/tinypng/agv-wms.png");
 }
 
 /* === TMS === */
 /* Item List NavbarLeft - Icon TMS */
 .navbarLeft__list__container__item__icon__left--TMS {
-    background-image: url("../../../icons/icon-tms.png");
+    background-image: url("../../../icons/tinypng/icon-tms.png");
 }
 .navbarLeft:hover .navbarLeft__list__container__item__icon__left--TMS {
-    background-image: url("../../../icons/agv-tms.png");
+    background-image: url("../../../icons/tinypng/agv-tms.png");
 }
 
 /* === Broker === */
 /* Item List NavbarLeft - Icon Broker */
 .navbarLeft__list__container__item__icon__left--broker {
-    background-image: url("../../../icons/icon-broker.png");
+    background-image: url("../../../icons/tinypng/icon-broker.png");
 }
 .navbarLeft:hover .navbarLeft__list__container__item__icon__left--broker {
-    background-image: url("../../../icons/agv-broker.png");
+    background-image: url("../../../icons/tinypng/agv-broker.png");
 }
 
 /* === Customer === */
 /* Item List NavbarLeft - Icon Customer */
 .navbarLeft__list__container__item__icon__left--customer {
-    background-image: url("../../../icons/icon-customer.png");
+    background-image: url("../../../icons/tinypng/icon-customer.png");
 }
 .navbarLeft:hover .navbarLeft__list__container__item__icon__left--customer {
-    background-image: url("../../../icons/agv-customer.png");
+    background-image: url("../../../icons/tinypng/agv-customer.png");
 }
 
 /* === ERP === */
 /* Item List NavbarLeft - Icon ERP */
 .navbarLeft__list__container__item__icon__left--erp {
-    background-image: url("../../../icons/icon-erp.png");
+    background-image: url("../../../icons/tinypng/icon-erp.png");
 }
 .navbarLeft:hover .navbarLeft__list__container__item__icon__left--erp {
-    background-image: url("../../../icons/agv-erp.png");
+    background-image: url("../../../icons/tinypng/agv-erp.png");
 }
 
 /* === Supply === */
 /* Item List NavbarLeft - Icon Supply */
 .navbarLeft__list__container__item__icon__left--supply {
-    background-image: url("../../../icons/icon-supply.png");
+    background-image: url("../../../icons/tinypng/icon-supply.png");
 }
 .navbarLeft:hover .navbarLeft__list__container__item__icon__left--supply {
-    background-image: url("../../../icons/agv-suply.png");
+    background-image: url("../../../icons/tinypng/agv-suply.png");
 }
 
 /* === Solutions === */
 /* Item List NavbarLeft - Icon Solutions */
 .navbarLeft__list__container__item__icon__left--solutions {
-    background-image: url("../../../icons/icon-solutions.png");
+    background-image: url("../../../icons/tinypng/icon-solutions.png");
 }
 .navbarLeft:hover .navbarLeft__list__container__item__icon__left--solutions {
-    background-image: url("../../../icons/agv-solutions.png");
+    background-image: url("../../../icons/tinypng/agv-solutions.png");
 }
 
 /* === Dropdown === */
