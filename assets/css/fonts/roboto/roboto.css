@@ -19,6 +19,7 @@ p,
 a,
 input,
 ul,
-li {
+li,
+div {
     font-family: roboto-light;
 }

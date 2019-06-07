@@ -1,0 +1,180 @@
+.margin__right--15 {
+    margin-right: -15px;
+}
+
+/* Form */
+/*.container__center__grid__item {
+    display: none;
+}
+
+/* Flexbox */
+.container__center__list__header,
+.container__center__list__items,
+.container__center__list__items__item--default,
+.container__center__list__items__item--small,
+.container__center__list__items__item--large,
+.container__center__list__items__item--default--icon
+.container__center__list__items__item--default--icon--attachment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__center__list__headerBox {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.container__center__list__header {
+    justify-content: flex-start;
+    padding-left: 15px;
+    font-size: .8em;
+}
+
+.container__center__list__header__item1 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item2 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item3 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item4 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item5 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item6 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item7 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item8 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item9 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item10 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item11 {
+    padding-left: 2%;
+}
+
+.container__center__list__header__item12 {
+    padding-left: 2%;
+}
+
+.container__center__list {
+    width: 100%;
+    height: 55vh;
+    padding-bottom: 70px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container__center__list__items {
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: auto;
+    font-size: .75em;
+}
+
+.container__center__list__items--silver {
+    background-color: #f0f0f0;
+}
+
+.container__center__list__items--white {
+    background-color: #ffffff;
+}
+
+.container__center__list__items__item--default {
+    width: 120px;
+    height: 30px;
+    margin: 2px;
+}
+
+.container__center__list__items__item--small {
+    width: 40px;
+    height: 30px;
+    margin: 2px;
+}
+
+.container__center__list__items__item--large {
+    width: 200px;
+    height: 30px;
+    margin: 2px;
+}
+
+.container__center__list__items__item--icon {
+    width: 70px;
+    height: 50px;
+    margin: 2px;
+    border-radius: 50px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__center__list__items__item--icon--PR {
+    background-image: url("../../../../icons/tinypng/pedido-recebido-active.png");
+}
+
+.container__center__list__items__item--icon--PP {
+    background-image: url("../../../../icons/tinypng/preparacao-pedido-active.png");
+}
+
+.container__center__list__items__item--icon--PRD {
+    background-image: url("../../../../icons/tinypng/pedido-realizado-active.png");
+}
+
+.container__center__list__items__item--icon--PRD--complete {
+    background-image: url("../../../../icons/tinypng/entrega-realizada-complete.png");
+}
+
+.container__center__list__items__item--icon--ET {
+    background-image: url("../../../../icons/tinypng/em-transito-active.png");
+}
+
+.container__center__list__items__item--icon--attachment {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__center__list__items__item--icon--attachment--active {
+    background-image: url("../../../../icons/tinypng/attachment-active.png");
+}
+
+.container__center__list__items__item--icon--attachment--disable {
+    background-image: url("../../../../icons/tinypng/attachment-disable.png");
+    cursor: auto;
+}
+
+
+
+
+

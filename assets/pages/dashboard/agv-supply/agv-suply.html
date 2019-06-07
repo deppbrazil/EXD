@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/agv-suply.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/buscaRapida.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/detalhes.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/buscaAvancada.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/footer.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/header.css" />
     
@@ -30,6 +31,13 @@
 <body>
 
     <section id="homeBuscaRapida"  class="container">
+        
+        <div class="container__buttons"> 
+
+        <!-- Back Form -->
+        <div id="buttonBackForm" class="button__back__form" onclick="backFormBuscaAvancada()">
+            <div class="button__arrow--left--relative"></div>
+        </div>
 
         <!-- Header -->
         <div class="container__header">
@@ -45,6 +53,7 @@
                 <h2 class="h2-text-size color__text__primary">Dashboard</h2>
             </div>
         </div>
+        </div>
 
         <!-- Container - Center - Busca rápida  -->
         <div id="busca__rapida" class="container__center">
@@ -57,68 +66,245 @@
         </div>
 
         <!-- Container - Center - Busca Avançada  -->
-       <div id="busca__avancada" class="container__center__grid" style="display:none;">
-            <div class="container__center__grid__item">
+       <div id="busca__avancada"  class="container__center__grid" style="display:none;">
+            
+            <div id="busca__avancada__form" class="container__center__grid__item">
 
                 <h3 class="text__h3--size">Busca Avançada</h3>
+
                 <form class="container__center__grid__item__form">
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Origem</p>
+                        <h4 class="text__h4--size">Origem</h4>
                         <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
                     </div>
+
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Nº Pedido, NF ou CT-e</p>
+                        <h4 class="text__h4--size">Nº Pedido, NF ou CT-e</h4>
                         <input class="container__center__grid__item__form__box__input" type="number" placeholder="Digite o número">
                     </div> 
                     <div class="container__center__grid__item__form__box">
-                         <p class="text__p--size">Data de emissão NF</p>
+                         <h4 class="text__h4--size">Data de emissão NF</h4>
                         <input class="container__center__grid__item__form__box__input" type="date" >
                     </div>
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Valor da NF</p>
+                        <h4 class="text__h4--size">Valor da NF</h4>
                         <input class="container__center__grid__item__form__box__input" type="number" placeholder="R$">
                     </div>
                 </form>
 
                 <form class="container__center__grid__item__form">
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Estado Destino</p>
+                        <h4 class="text__h4--size">Estado Destino</h4>
                         <input class="container__center__grid__item__form__box__input" type="text" placeholder="SP">
                     </div>
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Cidade Destino</p>
+                        <h4 class="text__h4--size">Cidade Destino</h4>
                         <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
                     </div> 
                     <div class="container__center__grid__item__form__box">
-                         <p class="text__p--size">Previsão de entrega</p>
+                         <h4 class="text__h4--size">Previsão de entrega</h4>
                         <input class="container__center__grid__item__form__box__input" type="date">
                     </div>
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Ocorrência</p>
+                        <h4 class="text__h4--size">Ocorrência</h4>
                         <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
                     </div>
                 </form>
 
                 <form class="container__center__grid__item__form">
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Cliente</p>
+                        <p class="text__h4--size">Cliente</p>
                         <input class="container__center__grid__item__form__box__input" type="text" placeholder="Digite o CNPJ">
                     </div>
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">Status do pedido</p>
+                        <p class="text__h4--size">Status do pedido</p>
                         <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
                     </div>
                     <div class="container__center__grid__item__form__box">
-                        <p class="text__p--size">VIP</p>
+                        <p class="text__h4--size">VIP</p>
                         <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
                     </div>
                 </form>
+
+                <!-- Button - Pesquisar -->
+                <div class="container__center__grid__containerButton">
+                    <button class="text__button--small button__default button__small text__color--second margin__right--15" type="button" onclick="goListBuscaAvancada()">Pesquisar</button>
+                </div> 
             </div>
 
-            <!-- Button - Pesquisar -->
-            <div class="container__center__grid__containerButton">
-                <button class="text__button--small button__default button__small text__color--second"type="button">Pesquisar</button>
-            </div> 
+            <!-- Busca Avançada - List --> 
+            <div id="listBuscaAvancada"  class="container__center__list__headerBox"> 
+
+                <div class="container__center__list__header">
+                    <div class="container__center__list__items__item--small container__center__list__header__item1">Data NF</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item2">NF</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item3">Pedido</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item4">CTRC</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item5">Status</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item6">Origem</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item7">Destinatário</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item8">Cidade</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item9">UF</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item10">Prevista</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item11">Agendamento</div>
+                    <div class="container__center__list__items__item--small container__center__list__header__item12">Entrega</div>
+                </div>
+
+                <div class="container__center__list">
+
+                    <!-- Item -->
+                    <div class="container__center__list__items container__center__list__items--silver">
+                        <div class="container__center__list__items__item--default">05/10/2019</div>
+                        <div class="container__center__list__items__item--default">000095838</div>
+                        <div class="container__center__list__items__item--default">000095838</div>
+                        <div class="container__center__list__items__item--default"></div>
+                        <div class="container__center__list__items__item--icon container__center__list__items__item--icon--PRD--complete"></div>
+                        <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                        <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                        <div class="container__center__list__items__item--default">Vinhedo</div>
+                        <div class="container__center__list__items__item--small">SP</div>
+                        <div class="container__center__list__items__item--default">30/05/2019</div>
+                        <div class="container__center__list__items__item--default">11/10/2019</div>
+                        <div class="container__center__list__items__item--default">01/07/2019</div>
+                        <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--active"></div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="container__center__list__items container__center__list__items--white">
+                        <div class="container__center__list__items__item--default">05/10/2019</div>
+                        <div class="container__center__list__items__item--default">000095838</div>
+                        <div class="container__center__list__items__item--default">000095838</div>
+                        <div class="container__center__list__items__item--default"></div>
+                        <div class="container__center__list__items__item--icon container__center__list__items__item--icon--ET"></div>
+                        <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                        <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                        <div class="container__center__list__items__item--default">Vinhedo</div>
+                        <div class="container__center__list__items__item--small">SP</div>
+                        <div class="container__center__list__items__item--default">30/05/2019</div>
+                        <div class="container__center__list__items__item--default">11/10/2019</div>
+                        <div class="container__center__list__items__item--default">01/07/2019</div>
+                        <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                    </div>
+
+                <!-- Item -->
+                <div class="container__center__list__items container__center__list__items--silver">
+                    <div class="container__center__list__items__item--default">05/10/2019</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default"></div>
+                    <div class="container__center__list__items__item--icon container__center__list__items__item--icon--PRD"></div>
+                    <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                    <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                    <div class="container__center__list__items__item--default">Vinhedo</div>
+                    <div class="container__center__list__items__item--small">SP</div>
+                    <div class="container__center__list__items__item--default">30/05/2019</div>
+                    <div class="container__center__list__items__item--default">11/10/2019</div>
+                    <div class="container__center__list__items__item--default">01/07/2019</div>
+                    <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                </div>
+
+                <!-- Item -->
+                <div class="container__center__list__items container__center__list__items--white">
+                    <div class="container__center__list__items__item--default">05/10/2019</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default"></div>
+                    <div class="container__center__list__items__item--icon container__center__list__items__item--icon--PP"></div>
+                    <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                    <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                    <div class="container__center__list__items__item--default">Vinhedo</div>
+                    <div class="container__center__list__items__item--small">SP</div>
+                    <div class="container__center__list__items__item--default">30/05/2019</div>
+                    <div class="container__center__list__items__item--default">11/10/2019</div>
+                    <div class="container__center__list__items__item--default">01/07/2019</div>
+                    <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                </div>
+
+                <!-- Item -->
+                <div class="container__center__list__items container__center__list__items--silver">
+                    <div class="container__center__list__items__item--default">05/10/2019</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default"></div>
+                    <div class="container__center__list__items__item--icon container__center__list__items__item--icon--PR"></div>
+                    <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                    <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                    <div class="container__center__list__items__item--default">Vinhedo</div>
+                    <div class="container__center__list__items__item--small">SP</div>
+                    <div class="container__center__list__items__item--default">30/05/2019</div>
+                    <div class="container__center__list__items__item--default">11/10/2019</div>
+                    <div class="container__center__list__items__item--default">01/07/2019</div>
+                    <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                </div>
+
+                <!-- Item -->
+                <div class="container__center__list__items container__center__list__items--white">
+                    <div class="container__center__list__items__item--default">05/10/2019</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default"></div>
+                    <div class="container__center__list__items__item--icon container__center__list__items__item--icon--PRD"></div>
+                    <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                    <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                    <div class="container__center__list__items__item--default">Vinhedo</div>
+                    <div class="container__center__list__items__item--small">SP</div>
+                    <div class="container__center__list__items__item--default">30/05/2019</div>
+                    <div class="container__center__list__items__item--default">11/10/2019</div>
+                    <div class="container__center__list__items__item--default">01/07/2019</div>
+                    <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                </div>
+
+                <!-- Item -->
+                <div class="container__center__list__items container__center__list__items--silver">
+                    <div class="container__center__list__items__item--default">05/10/2019</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default"></div>
+                    <div class="container__center__list__items__item--icon container__center__list__items__item--icon--ET"></div>
+                    <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                    <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                    <div class="container__center__list__items__item--default">Vinhedo</div>
+                    <div class="container__center__list__items__item--small">SP</div>
+                    <div class="container__center__list__items__item--default">30/05/2019</div>
+                    <div class="container__center__list__items__item--default">11/10/2019</div>
+                    <div class="container__center__list__items__item--default">01/07/2019</div>
+                    <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                </div>
+
+                <!-- Item -->
+                <div class="container__center__list__items container__center__list__items--white">
+                    <div class="container__center__list__items__item--default">05/10/2019</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default"></div>
+                    <div class="container__center__list__items__item--icon container__center__list__items__item--icon--PP"></div>
+                    <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                    <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                    <div class="container__center__list__items__item--default">Vinhedo</div>
+                    <div class="container__center__list__items__item--small">SP</div>
+                    <div class="container__center__list__items__item--default">30/05/2019</div>
+                    <div class="container__center__list__items__item--default">11/10/2019</div>
+                    <div class="container__center__list__items__item--default">01/07/2019</div>
+                    <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                </div>
+
+                <!-- Item -->
+                <div class="container__center__list__items container__center__list__items--silver">
+                    <div class="container__center__list__items__item--default">05/10/2019</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default">000095838</div>
+                    <div class="container__center__list__items__item--default"></div>
+                    <div class="container__center__list__items__item--icon container__center__list__items__item--icon--ET"></div>
+                    <div class="container__center__list__items__item--default">Vinhedo-SP</div>
+                    <div class="container__center__list__items__item--large">Zoetis Industria Agr...</div>
+                    <div class="container__center__list__items__item--default">Vinhedo</div>
+                    <div class="container__center__list__items__item--small">SP</div>
+                    <div class="container__center__list__items__item--default">30/05/2019</div>
+                    <div class="container__center__list__items__item--default">11/10/2019</div>
+                    <div class="container__center__list__items__item--default">01/07/2019</div>
+                    <div class="container__center__list__items__item--icon--attachment container__center__list__items__item--icon--attachment--disable"></div>
+                </div>
+            </div>
        </div>
 
 
@@ -202,7 +388,7 @@
         </div>
 
         <!-- Footer -->
-        <div class="container__footer">
+        <div id="footer" class="container__footer">
             <div class="container__footer__box">
 
                 <div class="container__footer__box__item container__footer__box__item--notBorder">

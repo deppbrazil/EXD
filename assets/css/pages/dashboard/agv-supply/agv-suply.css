@@ -15,6 +15,7 @@
 
 /* Both */
 .container,
+.container__buttons,
 .container__header,
 .container__header__item,
 .container__center,
@@ -46,12 +47,28 @@
     justify-content: flex-start;
 }
 
-/* Header */
+/* Container Buttons */
+.container__buttons {
+    width: 95%;
+    flex-direction: row;
+    height: auto;
+}
+
+/* Button Back Form */
+.button__back__form {
+    display: none;
+    width: 20px;
+    margin-right: 10px;
+    height: auto;
+    position: relative;
+}
+
+/* Header Buttons (Busca Rápida | Busca Avançada | Dashboard) */
 .container__header {
-    width: 90%;
-    height: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     flex-direction: row;
     border-radius: 60px;
     border: 2px solid rgb(24, 26, 107);
@@ -60,7 +77,7 @@
 /* Header - Items */
 .container__header__item {
     width: 100%;
-    height: 100%;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -139,7 +156,6 @@
 
 /* Container - Center - Busca Avançada */
 .container__center__grid {
-    display: none;
     width: 100%;
     height: auto;
 }
@@ -153,6 +169,8 @@
 .container__center__grid__item__form {
     width: 100%;
     flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .container__center__grid__item__form__box {
@@ -161,10 +179,12 @@
 }
 
 .container__center__grid__item__form__box__input {
-    width: 95%;
-    height: 30px;
+    width: 85%;
+    height: 25px;
     border-radius: 5px;
     outline: 0;
+    padding-left: 5px;
+    margin: 2px 2px 2px 0px;
     border: 1px solid #727272;
 }
 
@@ -190,6 +210,7 @@
 }
 
 .container__center__dashboard__box__header {
+    width: 100%;
     height: 60%;
     margin-bottom: 10px;
 }
@@ -290,6 +311,7 @@
 
 /* Footer */
 .container__footer {
+    display: none;
     width: 100%;
     height: 60px;
     position: absolute;
@@ -345,14 +367,14 @@
 
 /* Icons */
 .container__footer__box__item__icon--PR {
-    background-image: url("../../../../icons/tinypng/pedido-recebido.png");
+    background-image: url("../../../../icons/tinypng/pedido-recebido-active.png");
 }
 .container__footer__box__item__icon--PP {
-    background-image: url("../../../../icons/tinypng/preparacao-pedido.png");
+    background-image: url("../../../../icons/tinypng/preparacao-pedido-active.png");
 }
 .container__footer__box__item__icon--ET {
-    background-image: url("../../../../icons/tinypng/em-transito.png");
+    background-image: url("../../../../icons/tinypng/em-transito-active.png");
 }
 .container__footer__box__item__icon--PRZ {
-    background-image: url("../../../../icons/tinypng/pedido-realizado.png");
+    background-image: url("../../../../icons/tinypng/pedido-realizado-active.png");
 }

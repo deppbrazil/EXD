@@ -60,3 +60,14 @@
     background-position: center;
     background-image: url("../../icons/tinypng/arrow-blue-left.png");
 }
+
+.button__arrow--left--relative {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../icons/tinypng/arrow-blue-left.png");
+}

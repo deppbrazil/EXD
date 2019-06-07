@@ -127,6 +127,8 @@ function showSolutions() {
 function showScreenSearch() {
     var click = document.getElementById('content');
     click.style.left = "0";
+
+    var clickShow = document.getElementById('');
 }
 
 function showBox() {
