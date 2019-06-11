@@ -60,7 +60,7 @@
             <h3 class="text__h3--size">Busca Rápida</h3>
             <p class="text__p--size">Encontre e visualize seus pedidos rapidamente. Caso não tenha os dados abaixo ou queira informações mais detalhadas, preencha abaixo a busca avançada.</p>
             <div class="container__center__box">
-                <input class="text__input--size container__center__box__input" type="text" placeholder="Númedo do pedido ou NF-e" required >
+                <input class="text__input--size input__default" type="text" placeholder="Númedo do pedido ou NF-e" required >
                 <button class="text__button--small button__default button__small text__color--second" onclick="goListBucaRapida()">Pesquisar</button>
             </div>
         </div>
@@ -72,83 +72,135 @@
 
                 <h3 class="text__h3--size">Busca Avançada</h3>
 
+                <!-- Line 1 --> 
                 <form class="container__center__grid__item__form">
                     <div class="container__center__grid__item__form__box">
-                        <h4 class="text__h4--size">Origem</h4>
-                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
+                        <h4 class="text__h4--size">Tipo data</h4>
+                        <select class="select__default" type="text">
+                            <option value="">Tipo 1</option>
+                            <option value="">Tipo 2</option>
+                            <option value="">Tipo 3</option>
+                        <select>
                     </div>
 
                     <div class="container__center__grid__item__form__box">
-                        <h4 class="text__h4--size">Nº Pedido, NF ou CT-e</h4>
-                        <input class="container__center__grid__item__form__box__input" type="number" placeholder="Digite o número">
+                        <h4 class="text__h4--size">Data</h4>
+
+                        <div class="container__center__grid__item__form__box__date">
+                            <input class="input__default" type="date" >
+                            <p class="text__p--size container__center__grid__item__form__box__date__p">à</p>
+                            <input class="input__default" type="date" >
+                        </div>
                     </div> 
+
                     <div class="container__center__grid__item__form__box">
-                         <h4 class="text__h4--size">Data de emissão NF</h4>
-                        <input class="container__center__grid__item__form__box__input" type="date" >
-                    </div>
-                    <div class="container__center__grid__item__form__box">
-                        <h4 class="text__h4--size">Valor da NF</h4>
-                        <input class="container__center__grid__item__form__box__input" type="number" placeholder="R$">
+                        <h4 class="text__h4--size">Pedido</h4>
+                        <input class="input__default" type="text" >
                     </div>
                 </form>
 
+                <!-- Line 2 --> 
                 <form class="container__center__grid__item__form">
+                    
                     <div class="container__center__grid__item__form__box">
-                        <h4 class="text__h4--size">Estado Destino</h4>
-                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="SP">
+                        <h4 class="text__h4--size">CT-e</h4>
+                        <input class="input__default" type="text" >
                     </div>
+                    
                     <div class="container__center__grid__item__form__box">
-                        <h4 class="text__h4--size">Cidade Destino</h4>
-                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
-                    </div> 
-                    <div class="container__center__grid__item__form__box">
-                         <h4 class="text__h4--size">Previsão de entrega</h4>
-                        <input class="container__center__grid__item__form__box__input" type="date">
+                        <h4 class="text__h4--size">NF-e</h4>
+                        <input class="input__default" type="text" >
                     </div>
+                    
+                    <div class="container__center__grid__item__form__box">
+                        <h4 class="text__h4--size">Estado</h4>
+                        <select class="select__default" type="text">
+                                <option value="">Tipo 1</option>
+                                <option value="">Tipo 2</option>
+                                <option value="">Tipo 3</option>
+                        <select>
+                    </div>
+
+                    <div class="container__center__grid__item__form__box">
+                        <h4 class="text__h4--size">Cidade</h4>
+                        <select class="select__default" type="text">
+                                <option value="">Tipo 1</option>
+                                <option value="">Tipo 2</option>
+                                <option value="">Tipo 3</option>
+                        <select>
+                    </div>
+                </form>
+
+                <!-- Line 3 --> 
+                <form class="container__center__grid__item__form">
+                    
+                    <div class="container__center__grid__item__form__box">
+                        <h4 class="text__h4--size">Remetente</h4>
+                        <input class="input__default" type="text" >
+                    </div>
+
+                    <div class="container__center__grid__item__form__box">
+                        <h4 class="text__h4--size">Desitnatário</h4>
+                        <input class="input__default" type="text" >
+                    </div>
+                </form>
+
+                <!-- Line 4 --> 
+                <form class="container__center__grid__item__form">
+                    
+                    <div class="container__center__grid__item__form__box">
+                        <h4 class="text__h4--size">Status</h4>
+                        <select class="select__default" type="text">
+                                <option value="">Tipo 1</option>
+                                <option value="">Tipo 2</option>
+                                <option value="">Tipo 3</option>
+                        <select>
+                    </div>
+
+                    <div class="container__center__grid__item__form__box">
+                        <h4 class="text__h4--size">VIP</h4>
+                        <select class="select__default" type="text">
+                                <option value="">Tipo 1</option>
+                                <option value="">Tipo 2</option>
+                                <option value="">Tipo 3</option>
+                        <select>
+                    </div>
+
                     <div class="container__center__grid__item__form__box">
                         <h4 class="text__h4--size">Ocorrência</h4>
-                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
-                    </div>
-                </form>
-
-                <form class="container__center__grid__item__form">
-                    <div class="container__center__grid__item__form__box">
-                        <p class="text__h4--size">Cliente</p>
-                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Digite o CNPJ">
-                    </div>
-                    <div class="container__center__grid__item__form__box">
-                        <p class="text__h4--size">Status do pedido</p>
-                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
-                    </div>
-                    <div class="container__center__grid__item__form__box">
-                        <p class="text__h4--size">VIP</p>
-                        <input class="container__center__grid__item__form__box__input" type="text" placeholder="Selecione">
+                        <select class="select__default" type="text">
+                                <option value="">Tipo 1</option>
+                                <option value="">Tipo 2</option>
+                                <option value="">Tipo 3</option>
+                        <select>
                     </div>
                 </form>
 
                 <!-- Button - Pesquisar -->
                 <div class="container__center__grid__containerButton">
-                    <button class="text__button--small button__default button__small text__color--second margin__right--15" type="button" onclick="goListBuscaAvancada()">Pesquisar</button>
+                    <button class="text__button--small button__default button__small text__color--second margin__right--15" type="button" onclick="goListBuscaAvancada()">Filtrar</button>
                 </div> 
             </div>
 
             <!-- Busca Avançada - List --> 
             <div id="listBuscaAvancada"  class="container__center__list__headerBox"> 
 
-                <div class="container__center__list__header">
-                    <div class="container__center__list__items__item--small container__center__list__header__item1">Data NF</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item2">NF</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item3">Pedido</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item4">CTRC</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item5">Status</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item6">Origem</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item7">Destinatário</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item8">Cidade</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item9">UF</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item10">Prevista</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item11">Agendamento</div>
-                    <div class="container__center__list__items__item--small container__center__list__header__item12">Entrega</div>
+                <div class="container__center__list">
+                <div class="container__center__list__items container__center__list__header">
+                    <div class="container__center__list__items__item--default ">Data NF</div>
+                    <div class="container__center__list__items__item--default ">NF</div>
+                    <div class="container__center__list__items__item--default ">Pedido</div>
+                    <div class="container__center__list__items__item--default ">CTRC</div>
+                    <div class="container__center__list__items__item--icon ">Status</div>
+                    <div class="container__center__list__items__item--default ">Origem</div>
+                    <div class="container__center__list__items__item--large ">Destinatário</div>
+                    <div class="container__center__list__items__item--default ">Cidade</div>
+                    <div class="container__center__list__items__item--small ">UF</div>
+                    <div class="container__center__list__items__item--default ">Prevista</div>
+                    <div class="container__center__list__items__item--default ">Agendamento</div>
+                    <div class="container__center__list__items__item--default ">Entrega</div>
                 </div>
+                <div>
 
                 <div class="container__center__list">
 

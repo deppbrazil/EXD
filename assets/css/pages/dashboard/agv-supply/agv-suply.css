@@ -121,19 +121,7 @@
     margin-top: 2%;
     margin-bottom: 2%;
 }
-/* Input */
-.container__center__box__input {
-    width: 60%;
-    height: 10px;
-    margin-right: 2%;
-    border-radius: 10px;
-    border: 2px solid rgb(205, 205, 205);
-    padding: 10px;
-    outline: 0;
-    font-size: 1.4em;
-    color: rgb(114, 114, 114);
-    background-color: #ffffff;
-}
+
 /* Button */
 .container__center__box__button {
     width: 100px;
@@ -152,46 +140,6 @@
 .container__center__box__button:hover {
     box-sizing: border-box;
     box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
-}
-
-/* Container - Center - Busca Avançada */
-.container__center__grid {
-    width: 100%;
-    height: auto;
-}
-
-.container__center__grid__item {
-    width: 95%;
-    margin: auto;
-    height: auto;    
-}
-
-.container__center__grid__item__form {
-    width: 100%;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.container__center__grid__item__form__box {
-    width: 100%;
-    height: auto;
-}
-
-.container__center__grid__item__form__box__input {
-    width: 85%;
-    height: 25px;
-    border-radius: 5px;
-    outline: 0;
-    padding-left: 5px;
-    margin: 2px 2px 2px 0px;
-    border: 1px solid #727272;
-}
-
-.container__center__grid__containerButton {
-    width: 95%;
-    flex-direction: row;
-    justify-content: flex-end;
 }
 
 /* Container - Center - Dashboard */

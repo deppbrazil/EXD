@@ -2,12 +2,10 @@
     margin-right: -15px;
 }
 
-/* Form */
-/*.container__center__grid__item {
-    display: none;
-}
-
 /* Flexbox */
+.container__center__grid__item__form,
+.container__center__grid__item__form__box,
+.container__center__grid__item__form__box__date,
 .container__center__list__header,
 .container__center__list__items,
 .container__center__list__items__item--default,
@@ -21,64 +19,60 @@
     align-items: center;
 }
 
-.container__center__list__headerBox {
+/* Form */
+.container__center__grid__item {
+    display: none;
+}
+
+.container__center__grid {
     width: 100%;
     height: auto;
-    display: none;
+}
+
+.container__center__grid__item {
+    width: 95%;
+    margin: auto;
+    height: auto;
+}
+
+.container__center__grid__item__form {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: space-around;
+}
+
+.container__center__grid__item__form__box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.container__center__grid__item__form__box__date__p {
+    margin: 5px;
+}
+
+.container__center__grid__containerButton {
+    width: 95%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container__center__list__headerBox {
+    width: 100%;
+    height: 50px;
 }
 
 .container__center__list__header {
     justify-content: flex-start;
     padding-left: 15px;
     font-size: .8em;
-}
-
-.container__center__list__header__item1 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item2 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item3 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item4 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item5 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item6 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item7 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item8 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item9 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item10 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item11 {
-    padding-left: 2%;
-}
-
-.container__center__list__header__item12 {
-    padding-left: 2%;
 }
 
 .container__center__list {
@@ -107,7 +101,7 @@
 }
 
 .container__center__list__items__item--default {
-    width: 120px;
+    width: 100px;
     height: 30px;
     margin: 2px;
 }
