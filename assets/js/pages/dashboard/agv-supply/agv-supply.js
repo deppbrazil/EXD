@@ -47,6 +47,13 @@ function btnGoDetalhes() {
     clickShow.style.display = "block";
 }
 
+// Open Note //
+function openNote() {
+    var clickOpen = document.getElementById('note');
+    clickOpen.style.display = "block";
+
+}
+
 // Back Home - Busca Rápida //
 function btnGoHomeBuscaRapida() {
 

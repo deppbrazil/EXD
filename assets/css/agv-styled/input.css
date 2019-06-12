@@ -32,6 +32,8 @@
     outline: 0;
     padding: 10px;
     position: relative;
+    color: #727272;
+    border: 2px solid #cdcdcd;
     background-color: #ffffff;
 }
 

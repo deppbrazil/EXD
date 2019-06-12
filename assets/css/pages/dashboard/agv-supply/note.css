@@ -1,0 +1,113 @@
+/* Flexbox */
+.note,
+.note__panel,
+.note__panel__header,
+.note__panel__header__boxText,
+.note__panel__footer,
+.note__panel__footer__containerButtons,
+.note__panel__footer__containerButtons__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    background-color: #000000ba;
+}
+
+.note__panel {
+    width: 60%;
+    height: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.note__panel__header {
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    border-radius: 10px 10px 0 0 ;
+    background-color: #181a6b;
+}
+
+.note__panel__header__boxText {
+    width: 80%;
+    justify-content: flex-start;
+    height: auto;
+}
+
+.note__panel__content {
+    width: 90%;
+    height: 100%;
+    margin: 5%;
+    background-color: silver;
+}
+
+.note__panel__footer {
+    width: 90%;
+    height: 70px;
+    justify-content: space-around;
+}
+
+.note__panel__footer__containerButtons {
+    width: 100%;
+    height: 70px;
+    justify-content: flex-end;
+}
+
+.note__panel__footer__containerButtons__buttons {
+    width: 220px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.note__panel__footer__containerButtons__buttons__button {
+    width: 25%;
+    height: 100%;
+    border: 1px solid #181a6b;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.note__panel__footer__containerButtons__buttons__button--zoomIn {
+    background-image: url("../../../../icons/tinypng/zoom-in.png");
+}
+
+
+.note__panel__footer__containerButtons__buttons__button--zoomOut {
+    background-image: url("../../../../icons/tinypng/zoom-out.png");
+}
+
+.note__panel__footer__containerButtons__buttons__button--circleArrowRight {
+    background-image: url("../../../../icons/tinypng/circle-arrow-right-png.png");
+}
+
+.note__panel__footer__containerButtons__buttons__button--circleArrowLeft {
+    background-image: url("../../../../icons/tinypng/circle-arrow-left-png.png");
+}
+
+.note__panel__footer__containerButtons__buttons__button--borderLeft {
+    border-radius: 100px 0 0 100px;
+    border-right: 0;
+}
+
+.note__panel__footer__containerButtons__buttons__button--borderRight {
+    border-radius: 0 100px 100px 0;
+    border-left: 0;
+}
+
+.note__panel__footer__containerButtons__buttons__button--notBorderLeft {
+     border-left: 0;
+}

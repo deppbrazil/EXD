@@ -1,4 +1,12 @@
-/* Base Default */
+/* Flexbox */
+.button__close__default {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Default */
 .button__default {
 	padding: 8px 2px 8px 2px;
     margin-top: 20px;
@@ -17,6 +25,19 @@
     box-shadow: 5px 5px 5px rgba(24, 24, 24, 0.329);
 }
 
+/* Button Default Small */
+.button__small {
+	width: 100px;
+    height: 25px;
+}
+
+/* Button Default Medium */
+.button__medium {
+    width: 180px;
+    height: 45px;
+}
+
+/* Button Flat */
 .button__flat {
     padding: 8px 2px 8px 2px;
     margin-top: 20px;
@@ -26,18 +47,7 @@
     cursor: pointer;
 }
 
-/* Small */
-.button__small {
-	width: 100px;
-    height: 25px;
-}
-
-/* Medium */
-.button__medium {
-    width: 180px;
-    height: 45px;
-}
-
+/* Button Arrow - relative */
 .button__default__arrow--left {
     width: 35px;
     height: 35px;
@@ -49,6 +59,7 @@
     background-image: url("../../icons/tinypng/arrow-blue-left.png");
 }
 
+/* Button Arrow - absolute */
 .button__arrow--left {
     width: 35px;
     height: 35px;
@@ -61,6 +72,7 @@
     background-image: url("../../icons/tinypng/arrow-blue-left.png");
 }
 
+/* Button Arrow Small - relative */
 .button__arrow--left--relative {
     width: 25px;
     height: 25px;
@@ -70,4 +82,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../../icons/tinypng/arrow-blue-left.png");
+}
+
+/* Button Close Default - absolute */
+.button__close__default {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }

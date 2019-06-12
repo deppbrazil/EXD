@@ -44,6 +44,10 @@
 	margin-right: 5px;
 }
 
+.text__margin--left {
+	margin-left: 10px;
+}
+
 .text__margin--top {
 	margin-top: 5px;
 }

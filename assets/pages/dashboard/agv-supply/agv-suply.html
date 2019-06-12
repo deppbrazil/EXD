@@ -14,8 +14,9 @@
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/buscaRapida.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/detalhes.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/buscaAvancada.css" />
-    <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/footer.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/header.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/note.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/pages/dashboard/agv-supply/footer.css" />
     
 
     <!-- agv-styled -->
@@ -29,7 +30,6 @@
 </head>
 
 <body>
-
     <section id="homeBuscaRapida"  class="container">
         
         <div class="container__buttons"> 
@@ -503,7 +503,7 @@
                 </div>
 
             </div>
-            <input class="text__input--size container__center__box__input" type="text" placeholder="Deseja fazer nova busca? Insira NF ou nº do pedido" required >
+            <input class="text__input--size input__default" type="text" placeholder="Deseja fazer nova busca? Insira NF ou nº do pedido" required >
             <button class="text__button--small button__default button__small text__color--second"type="button">Pesquisar</button>
         </header>
 
@@ -590,7 +590,7 @@
 
                 <div class="container__buscaRapida__ul__items__item3">
                     <button class="text__button--small button__flat button__small text__color--primary" onclick="btnGoDetalhes()">Detalhes</button>
-                    <div class="container__buscaRapida__ul__items__item3__anexo container__buscaRapida__ul__items__item3__anexo--active"></div>
+                    <div class="container__buscaRapida__ul__items__item3__anexo container__buscaRapida__ul__items__item3__anexo--active" onclick="openNote()"></div>
                 </div>
             </div>
 
