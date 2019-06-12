@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/agv-styled/text.css" />
     <link rel="stylesheet" type="text/css" href="../../css/agv-styled/button.css" />
     <link rel="stylesheet" type="text/css" href="../../css/agv-styled/input.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/agv-styled/logo.css" />
     <link rel="stylesheet" type="text/css" href="../../css/agv-styled/theme/blue-orange.css" />
 
     <!-- Favicon -->
@@ -42,7 +43,7 @@
     <header class="navbarTop">
 
         <div class="navbarTop__padding">
-            <div>Logo</div>
+            <div class="container__panel__logo container__panel__logo--sm"></div>
         </div>
 
         <div class="navbatTop__panelRight navbarTop__padding">
@@ -75,7 +76,7 @@
     </header>
 
     <!-- Menu left -->
-    <div class="navbarLeft">
+    <div id="navbarLeft" class="navbarLeft" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)">
 
         <!-- Search -->
         <div class="container__search">
@@ -87,7 +88,7 @@
         <ul class="navbarLeft__list">
             
             <!-- AGV WMS -->
-            <div class="navbarLeft__list__container" >
+            <div class="navbarLeft__list__container">
                 <li class="navbarLeft__list__container__item" onclick="showWMS()">
                     <a class="navbarLeft__list__container__item" >
                         <div class="navbarLeft__list__container__item__icon__left navbarLeft__list__container__item__icon__left--WMS"></div>
@@ -96,7 +97,7 @@
                 </li>
 
                 <!-- Dropdown -->
-                    <ul style="display: none;" id="drop__content--WMS" class="navbarLeft__list__container__dropdown">
+                    <ul style="display: none;" id="drop__content--WMS" class="navbarLeft__list__container__dropdown" onmouseover="mouseInItem(this)" onmouseout="mouseOutItem(this)">
                         
                         <li class="navbarLeft__list__container__dropdown__item" >
                             <a class="text__a--size" href="#">Item 1</a>
@@ -134,7 +135,7 @@
                 </li>
 
                 <!-- Dropdown -->
-                    <ul style="display: none;" id="drop__content--TMS" class="navbarLeft__list__container__dropdown">
+                    <ul style="display: none;" id="drop__content--TMS" class="navbarLeft__list__container__dropdown" onmouseover="mouseInItem(this)" onmouseout="mouseOutItem(this)">
                         
                         <li class="navbarLeft__list__container__dropdown__item" >
                             <a class="text__a--size" href="#">Item 1</a>
@@ -172,7 +173,7 @@
                 </li>
 
                 <!-- Dropdown -->
-                    <ul style="display: none;" id="drop__content--broker" class="navbarLeft__list__container__dropdown">
+                    <ul style="display: none;" id="drop__content--broker" class="navbarLeft__list__container__dropdown" onmouseover="mouseInItem(this)" onmouseout="mouseOutItem(this)">
                         
                         <li class="navbarLeft__list__container__dropdown__item" >
                             <a class="text__a--size" href="#">Item 1</a>
@@ -210,7 +211,7 @@
                 </li>
 
                 <!-- Dropdown -->
-                    <ul style="display: none;" id="drop__content--customer" class="navbarLeft__list__container__dropdown">
+                    <ul style="display: none;" id="drop__content--customer" class="navbarLeft__list__container__dropdown" onmouseover="mouseInItem(this)" onmouseout="mouseOutItem(this)">
                         
                         <li class="navbarLeft__list__container__dropdown__item" >
                             <a class="text__a--size" href="#">Item 1</a>
@@ -248,7 +249,7 @@
                 </li>
 
                 <!-- Dropdown -->
-                    <ul style="display: none;" id="drop__content--erp" class="navbarLeft__list__container__dropdown">
+                    <ul style="display: none;" id="drop__content--erp" class="navbarLeft__list__container__dropdown" onmouseover="mouseInItem(this)" onmouseout="mouseOutItem(this)">
                         
                         <li class="navbarLeft__list__container__dropdown__item" >
                             <a class="text__a--size" href="#">Item 1</a>
@@ -286,7 +287,7 @@
                 </li>
 
                 <!-- Dropdown -->
-                    <ul style="display: none;" id="drop__content--supply" class="navbarLeft__list__container__dropdown">
+                    <ul style="display: none;" id="drop__content--supply" class="navbarLeft__list__container__dropdown" onmouseover="mouseInItem(this)" onmouseout="mouseOutItem(this)">
                         
                         <li class="navbarLeft__list__container__dropdown__item" >
                             <a class="text__a--size" href="#">Item 1</a>
@@ -324,7 +325,7 @@
                 </li>
 
                 <!-- Dropdown -->
-                    <ul style="display: none;" id="drop__content--solutions" class="navbarLeft__list__container__dropdown">
+                    <ul style="display: none;" id="drop__content--solutions" class="navbarLeft__list__container__dropdown" onmouseover="mouseInItem(this)" onmouseout="mouseOutItem(this)">
                         
                         <li class="navbarLeft__list__container__dropdown__item" >
                             <a class="text__a--size" href="#">Item 1</a>
@@ -351,12 +352,36 @@
         </ul>
     </div>
 
+    <!-- Modal -->
     <section id="content" class="content">
         <iframe class="content__screen" src="./agv-supply/agv-suply.html">
             <p class="p-text-size" >Your browser does not support iframes.</p>
         </iframe>
     </section>
 
+    <!-- Localization (Mapa) -->
+    <div id="localization" class="localization">
+        <div class="localization__panel">
+        
+        <!-- Header -->
+            <div class="localization__panel__header">
+                <div class="localization__panel__header__boxText">
+                    <h2 class="text__h2--size text__color--second text__margin--right text__margin--left">Localização do Pedido</h2>
+                    <h2 class="text__h2--size text__color--second text__margin--right text__margin--left">03849384</h2>
+                </div>
+                <h2 class="text__h2--size text__color--second button__close__default">X</h2>
+            </div>
+
+            <!-- Content -->
+            <div class="localization__panel__content"></div>
+
+            <!-- Footer -->
+            <div class="localization__panel__footer">
+                <button class="text__button--medium button__default button__medium text__color--second" onclick="">Concluído</button>
+            </div>
+        
+        </div>
+    </div>
     
     <!-- Note (Canhoto) -->
     <div id="note" class="note">
@@ -376,7 +401,7 @@
 
             <!-- Footer -->
             <div class="note__panel__footer">
-                <div class="note__panel__footer__containerButtons">
+                <div class="note__panel__footer__containerButtons note__panel__footer__containerButtons--left">
                     <div class="note__panel__footer__containerButtons__buttons">
                         <div class="note__panel__footer__containerButtons__buttons__button note__panel__footer__containerButtons__buttons__button--zoomIn note__panel__footer__containerButtons__buttons__button--borderLeft"></div>
                         <div class="note__panel__footer__containerButtons__buttons__button note__panel__footer__containerButtons__buttons__button--zoomOut"></div>
@@ -385,18 +410,11 @@
                     </div>
                 </div>
 
-                <div class="note__panel__footer__containerButtons">
-                    <button class="text__button--small button__default button__small text__color--second" onclick="">Download</button>
+                <div class="note__panel__footer__containerButtons note__panel__footer__containerButtons--right">
+                    <button class="text__button--medium button__default button__medium text__color--second" onclick="">Download</button>
                 </div>
             </div>
-
         </div>
     <div>
-
-    <!-- Localization -->
-    <div class="localization">
-        
-    <div>
-
 </body>
 </html>

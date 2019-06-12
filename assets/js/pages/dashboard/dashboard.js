@@ -1,3 +1,21 @@
+// Navbar //
+function mouseIn(x) {
+    x.style.width = "300px";
+}
+  
+function mouseOut(x) {
+    x.style.width = "50px";
+}
+
+function mouseInItem(x) {
+    x.style.display = "block";
+}
+  
+function mouseOutItem(x) {
+    x.style.display = "none";
+}
+
+
 function showWMS() {
 
     var click = document.getElementById('drop__content--WMS');

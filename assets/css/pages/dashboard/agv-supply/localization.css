@@ -1,0 +1,58 @@
+/* Flexbox */
+.localization,
+.localization__panel,
+.localization__panel__header,
+.localization__panel__header__boxText,
+.localization__panel__content,
+.localization__panel__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.localization {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    background-color: #000000ba;
+}
+
+.localization__panel {
+    width: 60%;
+    height: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.localization__panel__header {
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    border-radius: 10px 10px 0 0 ;
+    background-color: #181a6b;
+}
+
+.localization__panel__header__boxText {
+    width: 80%;
+    justify-content: flex-start;
+    height: auto;
+}
+
+.localization__panel__content {
+    width: 90%;
+    height: 80%;
+    margin: 2%;
+    margin-bottom: 0;
+    background-color: silver;
+}
+
+.localization__panel__footer {
+    width: 90%;
+    height: auto;
+}

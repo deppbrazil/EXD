@@ -50,8 +50,15 @@ function btnGoDetalhes() {
 // Open Note //
 function openNote() {
     var clickOpen = document.getElementById('note');
-    clickOpen.style.display = "block";
+    alert('Foi');
+    clickOpen.style.display = "flex";
+}
 
+// Open Localization //
+function openLocalization() {
+    var clickOpen = document.getElementById('localization');
+    alert('Foi');
+    clickOpen.style.display = "flex";
 }
 
 // Back Home - Busca Rápida //

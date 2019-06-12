@@ -12,11 +12,6 @@
     -o-transition: 0.3s ease-in-out; // Opera   
 }
 
-/* NavbarLeft - Hover */
-.navbarLeft:hover {
-    width: 300px;
-}
-
 /* NavbarLeft - List */
 .navbarLeft__list {
     width: 100%;

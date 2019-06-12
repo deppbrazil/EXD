@@ -1,0 +1,18 @@
+/* Logo */
+.container__panel__logo {
+    background-image: url("../../brands/agv.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Logo Medium */
+.container__panel__logo--md {
+    width: 100px;
+    height: 100px;
+}
+
+/* Logo Small */
+.container__panel__logo--sm {
+    width: 50px;
+    height: 50px;
+}
