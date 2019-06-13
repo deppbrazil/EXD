@@ -91,15 +91,33 @@
     border-radius: 60px 0px 0px 60px;
 }
 
+.container__header__item--borderLeft:focus {
+    background-color: rgb(24, 26, 107);
+    color: #ffff;
+    outline: 0;
+}
+
 /* Header - Items - Item Center */
 .container__header__item--borderCenter {
     border-left: 2px solid rgb(24, 26, 107);
     border-right: 2px solid  rgb(24, 26, 107);
 }
 
+.container__header__item--borderCenter:focus {
+    background-color: rgb(24, 26, 107);
+    color: #ffff;
+    outline: 0;
+}
+
 /* Header - Items - Item Right */
 .container__header__item--borderRight {
     border-radius: 0px 60px 60px 0px;
+}
+
+.container__header__item--borderRight:focus {
+    background-color: rgb(24, 26, 107);
+    color: #ffff;
+    outline: 0;
 }
 
 /* Container - Center - Busca Rápida */
