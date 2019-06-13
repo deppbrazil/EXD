@@ -61,6 +61,18 @@ function openLocalization() {
     clickOpen.style.display = "flex";
 }
 
+// Open Alert - Ocorrências 
+function openAlert() {
+    var clickOpen = document.getElementById('alert__ocorrencias');
+    //clickOpen.style.display = "flex";
+
+    if (clickOpen.style.display === "none") {
+        clickOpen.style.display = "flex";
+    } else {
+        clickOpen.style.display = "none";
+    }
+}
+
 // Back Home - Busca Rápida //
 function btnGoHomeBuscaRapida() {
 

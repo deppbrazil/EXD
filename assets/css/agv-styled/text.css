@@ -51,3 +51,7 @@
 .text__margin--top {
 	margin-top: 5px;
 }
+
+.text__margin--bottom {
+	margin-bottom: 5px;
+}
