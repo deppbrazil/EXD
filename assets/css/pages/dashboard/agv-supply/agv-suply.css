@@ -27,6 +27,7 @@
 .container__center__dashboard__box__items,
 .container__center__dashboard__box__items__top,
 .container__center__dashboard__box__items__bottom,
+.container__center__dashboard__box__items__bottom__span,
 .container__center__dashboard__box__footer,
 .container__center__dashboard__box__footer__alignContent,
 .container__footer,
@@ -232,14 +233,18 @@
 }
 
 .container__center__dashboard__box__items__bottom__span {
-    width: 15px;
+    width: 50px;
     height: 15px;
-    margin-top: -8px;
+    margin-top: -5px;
     margin-left: 70%;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
     background-image: url("../../../../icons/tinypng/alert.png");
     background-size: contain;
+    background-position: 23px;
     background-repeat: no-repeat;
+    color: #ff0000;
 }
 
 .container__center__dashboard__box__footer {
