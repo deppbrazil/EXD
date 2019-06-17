@@ -47,20 +47,6 @@ function btnGoDetalhes() {
     clickShow.style.display = "block";
 }
 
-// Open Note //
-function openNote() {
-    var clickOpen = document.getElementById('note');
-    alert('Foi');
-    clickOpen.style.display = "flex";
-}
-
-// Open Localization //
-function openLocalization() {
-    var clickOpen = document.getElementById('localization');
-    alert('Foi');
-    clickOpen.style.display = "flex";
-}
-
 // Open Alert - Ocorrências 
 function openAlert() {
     var clickOpen = document.getElementById('alert__ocorrencias');

@@ -354,7 +354,7 @@
 
     <!-- Modal -->
     <section id="content" class="content">
-        <iframe class="content__screen" src="./agv-supply/agv-suply.html">
+        <iframe id="agv-suply-iframe" class="content__screen" src="./agv-supply/agv-suply.html">
             <p class="p-text-size" >Your browser does not support iframes.</p>
         </iframe>
     </section>
@@ -369,7 +369,7 @@
                     <h2 class="text__h2--size text__color--second text__margin--right text__margin--left">Localização do Pedido</h2>
                     <h2 class="text__h2--size text__color--second text__margin--right text__margin--left">03849384</h2>
                 </div>
-                <h2 class="text__h2--size text__color--second button__close__default">X</h2>
+                <h2 class="text__h2--size text__color--second button__close__default" onclick="closeMap()">X</h2>
             </div>
 
             <!-- Content -->
@@ -416,5 +416,9 @@
             </div>
         </div>
     <div>
+
+    <!-- Open Localization -->
+    <script type="text/javascript" src="../../js/pages/dashboard/agv-supply/localization.js"></script>
+   
 </body>
 </html>

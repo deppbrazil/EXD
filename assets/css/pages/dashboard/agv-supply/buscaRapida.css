@@ -214,6 +214,7 @@
 }
 
 .container__buscaRapida__ul__items__item2__boxElements__divisor__searching--disable {
+    pointer-events: none;
     background-color:  #b3b3b3;
     cursor: auto;
 }
