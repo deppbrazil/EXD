@@ -2,20 +2,20 @@
 (function(window, document){
     var iframe = document.getElementById('agv-suply-iframe');
 
-    // onload iframe
+    // Onload iframe
     iframe.onload = function() {
         var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
         var openMapButton = iframeDoc.querySelectorAll('.boxElements-button-open-map');
 
         openMapButton.forEach(elm => {
             elm.addEventListener('click', function(){
-                const localization = document.querySelector('.localization');
+                var localization = document.querySelector('.localization');
 
                 if (!!localization) {
-                    // exibi o painel.
+                    // Open Panel
                     localization.style.display = 'flex';
 
-                    // fecha o painel.
+                    // Close Panel
                     localization.onclick = function(evt) {
                         if (evt.target === localization) {
                             localization.style.display = 'none';

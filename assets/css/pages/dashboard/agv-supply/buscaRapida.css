@@ -261,6 +261,7 @@
 .container__buscaRapida__ul__items__item3__anexo--disable {
     background-image: url("../../../../icons/tinypng/attachment-disable.png");
     border: 1px solid #d7d7d7;
+    pointer-events: none;
     cursor: auto;
 }
 
