@@ -3,7 +3,7 @@
     var iframe = document.getElementById('agv-suply-iframe');
 
     // Onload iframe
-    iframe.onload = function() {
+    iframe.addEventListener('load', function() {
         var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
         var openMapButton = iframeDoc.querySelectorAll('.boxElements-button-open-map');
 
@@ -24,7 +24,7 @@
                 }
             })
         });
-    };
+    });
 })(window, document);
 
 // Close Map - Button 'X' //
